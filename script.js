@@ -275,3 +275,10 @@ form.addEventListener("submit", (e) => {
     }, 5000);
   }, 1200);
 });
+/* ========== Scroll Progress Bar ========== */
+window.addEventListener("scroll", () => {
+  const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  const scrolled = (winScroll / height) * 100;
+  document.getElementById("scrollProgress").style.width = scrolled + "%";
+});
