@@ -162,12 +162,14 @@ document
 /* ========== Project modal ========== */
 const projectsData = {
   "blue-market": {
-    title: "بلو مارکت",
-    type: "فروشگاه اینترنتی موبایل",
-    // ✅ مسیر عکس بدون پوشه
-    img: "blue-market-1.jpg",
-    desc: "طراحی و توسعه یک فروشگاه آنلاین موبایل با تمرکز بر نمایش محصولات، تجربه خرید ساده، پشتیبانی کامل از زبان فارسی و چیدمان راست‌چین. رابط کاربری واکنش‌گرا برای موبایل، تبلت و دسکتاپ. از Bootstrap 5 و طراحی مدرن استفاده شده است.",
-    tags: ["HTML / CSS", "JavaScript", "Bootstrap 5", "RTL", "Responsive"],
+    title: "بلو مارکت (Blue Market)",
+    type: "فروشگاه اینترنتی موبایل و کالای دیجیتال",
+    images: [
+      "blue-market-1.jpg",
+      "blue-market-2.jpg" // اگر عکس دومی داری، اینجا مسیرش رو بذار
+    ],
+    desc: "طراحی و توسعه یک فروشگاه اینترنتی کامل و داینامیک با بیش از ۱۵۰ محصول. این پروژه شامل سیستم فیلتر و دسته‌بندی پیشرفته، جستجوی زنده، اسلایدر محصولات، بخش نظرات مشتریان و رابط کاربری کاملاً راست‌چین (RTL) است. چالش اصلی این پروژه، مدیریت داینامیک دیتای حجیم محصولات (از طریق آرایه‌های جاوااسکریپت) و هماهنگ‌سازی انیمیشن‌های UI بدون افت سرعت سایت بود.",
+    tags: ["HTML5", "CSS3", "Vanilla JS", "Bootstrap 5", "Responsive Design", "E-Commerce UI", "DOM Manipulation"],
     demo: "https://mosayb-dev.github.io/BlueMarket.ir/",
     source: "https://github.com/mosayb-dev/BlueMarket.ir",
   },
@@ -182,10 +184,23 @@ document.querySelectorAll(".project-card[data-project]").forEach((card) => {
     const id = card.dataset.project;
     const data = projectsData[id];
     if (!data) return;
+
+    // ساخت گالری عکس‌ها
+    let imagesHTML = "";
+    if (data.images && data.images.length > 0) {
+      imagesHTML = `<div class="modal-gallery">`;
+      data.images.forEach(img => {
+        imagesHTML += `<img src="${img}" alt="${data.title}" onerror="this.style.display='none'">`;
+      });
+      imagesHTML += `</div>`;
+    } else if (data.img) {
+      imagesHTML = `<img src="${data.img}" alt="${data.title}" onerror="this.style.display='none'">`;
+    }
+
     modalBody.innerHTML = `
       <h2>${data.title}</h2>
       <div class="modal-type">${data.type}</div>
-      <img src="${data.img}" alt="${data.title}" onerror="this.style.display='none'">
+      ${imagesHTML}
       <p>${data.desc}</p>
       <div class="project-tags">${data.tags.map((t) => `<span>${t}</span>`).join("")}</div>
       <div class="project-actions">
