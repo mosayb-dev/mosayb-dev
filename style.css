@@ -347,3 +347,36 @@ img{max-width:100%;display:block}
   .project-art{print-color-adjust:exact;-webkit-print-color-adjust:exact}
   .footer{color:#444}
 }
+
+/* ===== Custom Neon Scrollbar ===== */
+
+/* برای کروم، اج، سافاری و اوپرا */
+::-webkit-scrollbar {
+  width: 10px; /* پهنای اسکرول‌بار */
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg); /* رنگ پس‌زمینه اسکرول‌بار */
+  border-left: 1px solid rgba(255, 255, 255, 0.05); /* یک خط بسیار محو برای جدا کردن */
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--panel2); /* رنگ پیش‌فرض دستگیره */
+  border-radius: 10px;
+  border: 2px solid var(--bg); /* حاشیه برای اینکه از پس‌زمینه جدا بشه */
+  transition: 0.3s;
+}
+
+/* افکت درخشان (Neon Glow) وقتی موس روی اسکرول‌بار هست */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--blue);
+  box-shadow: 0 0 15px var(--blue); /* افکت نورانی آبی */
+}
+
+/* برای مرورگر فایرفاکس (که کدهای بالا رو پشتیبانی نمی‌کنه) */
+@supports (scrollbar-color: auto) {
+  * {
+    scrollbar-width: thin;
+    scrollbar-color: var(--blue) var(--bg);
+  }
+}
