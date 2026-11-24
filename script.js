@@ -40,7 +40,8 @@ document.addEventListener("DOMContentLoaded", () => {
       tg_cta: "عضویت در @MosaybDev",
       edu_badge: "در حال تحصیل (۱۴۰۱ – ۱۴۰۶)",
       edu_title: "کارشناسی مهندسی کامپیوتر",
-      edu_uni: "دانشگاه سراوان — تمرکز بر توسعه نرم‌افزار، پایگاه داده و سیستم‌های تحت وب",
+      edu_uni:
+        "دانشگاه سراوان — تمرکز بر توسعه نرم‌افزار، پایگاه داده و سیستم‌های تحت وب",
       lang_fa: "فارسی (مسلط)",
       lang_bal: "بلوچی (مادری)",
       lang_en: "انگلیسی (فنی)",
@@ -87,13 +88,17 @@ document.addEventListener("DOMContentLoaded", () => {
       wf_title: "مسیر اجرای پروژه",
       wf_subtitle: "شفافیت از اولین پیام تا تحویل نهایی و پشتیبانی",
       wf1_t: "تحلیل نیاز و معماری",
-      wf1_d: "بررسی دقیق هدف پروژه، امکانات مورد نیاز، جریان کاربری و انتخاب بهترین ساختار فنی.",
+      wf1_d:
+        "بررسی دقیق هدف پروژه، امکانات مورد نیاز، جریان کاربری و انتخاب بهترین ساختار فنی.",
       wf2_t: "طراحی رابط کاربری",
-      wf2_d: "طراحی چیدمان مدرن، واکنش‌گرا و استاندارد برای تجربه‌ای روان در موبایل و دسکتاپ.",
+      wf2_d:
+        "طراحی چیدمان مدرن، واکنش‌گرا و استاندارد برای تجربه‌ای روان در موبایل و دسکتاپ.",
       wf3_t: "توسعه و کدنویسی تمیز",
-      wf3_d: "پیاده‌سازی فرانت‌اند یا ربات تلگرام با کدنویسی ماژولار، سرعت بالا و رعایت نکات امنیتی.",
+      wf3_d:
+        "پیاده‌سازی فرانت‌اند یا ربات تلگرام با کدنویسی ماژولار، سرعت بالا و رعایت نکات امنیتی.",
       wf4_t: "تست، استقرار و پشتیبانی",
-      wf4_d: "بررسی نهایی در دستگاه‌های مختلف، راه‌اندازی آنلاین و همراهی برای توسعه قابلیت‌های بعدی.",
+      wf4_d:
+        "بررسی نهایی در دستگاه‌های مختلف، راه‌اندازی آنلاین و همراهی برای توسعه قابلیت‌های بعدی.",
       stack_title: "ابزارها و تکنولوژی‌ها",
       stack_subtitle: "مهارت‌هایی که در پروژه‌های واقعی به کار می‌برم",
       st1_t: "توسعه فرانت‌اند و وب",
@@ -122,6 +127,25 @@ document.addEventListener("DOMContentLoaded", () => {
       footer_name: "مصیب شنبه زهی (MosaybDev)",
       footer_built: "ساخته‌شده با کدنویسی تمیز و دقت در جزئیات",
       btn_new_tab: "تب جدید",
+      req_err: "لطفاً این بخش را تکمیل کنید",
+      mail_sent_msg: "✅ برنامه ایمیل شما با متن آماده باز شد.",
+      tg_sent_msg: "✅ پیام شما آماده ارسال در تلگرام (@MosaybDev) شد.",
+      bot_title: "ربات کافی‌نت مهندس",
+      bot_online: "● آنلاین — شبیه‌ساز تعاملی",
+      bot_welcome:
+        "سلام 👋 به ربات خدمات غیرحضوری کافی‌نت مهندس خوش آمدید. یکی از گزینه‌های زیر را امتحان کنید:",
+      bot_b1: "📝 ثبت سفارش جدید",
+      bot_b2: "🔍 پیگیری با کد رهگیری",
+      bot_b3: "💳 تعرفه خدمات",
+      bot_b4: "👨‍💻 ارتباط با مدیر",
+      bot_r1:
+        "✅ بخش ثبت سفارش فعال شد. نوع خدمت را انتخاب و مدارک را ارسال کنید تا کد پیگیری صادر شود.",
+      bot_r2:
+        "🔎 وضعیت سفارش #CN-4026: «تأیید مدارک و در حال انجام توسط اپراتور» — زمان تحویل تخمینی: ۱۵ دقیقه.",
+      bot_r3:
+        "📋 لیست تعرفه‌ها به‌صورت خودکار از پنل مدیریت خوانده می‌شود و پیش از پرداخت فاکتور دقیق نمایش داده می‌شود.",
+      bot_r4:
+        "💬 پیام شما مستقیم به پنل مدیریت ارسال می‌شود. برای اجرای واقعی ربات از دکمه بالای پنجره وارد تلگرام شوید.",
     },
     en: {
       dir: "ltr",
@@ -162,7 +186,8 @@ document.addEventListener("DOMContentLoaded", () => {
       tg_cta: "Join @MosaybDev",
       edu_badge: "Undergraduate (2022 – 2027)",
       edu_title: "B.Sc. in Computer Engineering",
-      edu_uni: "Saravan University — Software Development, Databases & Web Systems",
+      edu_uni:
+        "Saravan University — Software Development, Databases & Web Systems",
       lang_fa: "Persian (Fluent)",
       lang_bal: "Balochi (Native)",
       lang_en: "English (Technical)",
@@ -207,15 +232,20 @@ document.addEventListener("DOMContentLoaded", () => {
       btn_bot_sim: "Interactive Bot Demo",
       btn_open_tg: "Open in Telegram",
       wf_title: "Project Execution Workflow",
-      wf_subtitle: "Clear milestones from initial idea to deployment and support",
+      wf_subtitle:
+        "Clear milestones from initial idea to deployment and support",
       wf1_t: "Discovery & Architecture",
-      wf1_d: "Analyzing goals, core features, user journeys, and selecting the right tech stack.",
+      wf1_d:
+        "Analyzing goals, core features, user journeys, and selecting the right tech stack.",
       wf2_t: "UI/UX Design",
-      wf2_d: "Crafting clean, responsive layouts for effortless browsing on every screen size.",
+      wf2_d:
+        "Crafting clean, responsive layouts for effortless browsing on every screen size.",
       wf3_t: "Clean Development",
-      wf3_d: "Building modular frontend or Telegram bot logic with speed and security in mind.",
+      wf3_d:
+        "Building modular frontend or Telegram bot logic with speed and security in mind.",
       wf4_t: "Testing, Launch & Support",
-      wf4_d: "Cross-device QA testing, live deployment, and ongoing feature iterations.",
+      wf4_d:
+        "Cross-device QA testing, live deployment, and ongoing feature iterations.",
       stack_title: "Tools & Technologies",
       stack_subtitle: "Technologies I use to ship production-ready projects",
       st1_t: "Frontend & Web",
@@ -244,6 +274,25 @@ document.addEventListener("DOMContentLoaded", () => {
       footer_name: "Mosayb Shanbezehi (MosaybDev)",
       footer_built: "Built with clean code and attention to detail",
       btn_new_tab: "New Tab",
+      req_err: "Please complete this field",
+      mail_sent_msg: "✅ Your email client opened with a pre-filled draft.",
+      tg_sent_msg: "✅ Your message is ready to send on Telegram (@MosaybDev).",
+      bot_title: "CafeNet Engineer Bot",
+      bot_online: "● Online — Interactive Simulator",
+      bot_welcome:
+        "Hello 👋 Welcome to CafeNet Engineer remote service bot. Try one of the options below:",
+      bot_b1: "📝 New Service Order",
+      bot_b2: "🔍 Track Order ID",
+      bot_b3: "💳 Service Pricing",
+      bot_b4: "👨‍💻 Contact Admin",
+      bot_r1:
+        "✅ Order flow started. Choose a service category and upload your documents to receive a tracking ID.",
+      bot_r2:
+        "🔎 Order #CN-4026 status: «Documents verified & in progress» — Estimated turnaround: 15 mins.",
+      bot_r3:
+        "📋 Pricing is synced dynamically from the admin panel and shown clearly before checkout.",
+      bot_r4:
+        "💬 Your message routes directly to the admin panel. Use the top button to open the live bot in Telegram.",
     },
     ar: {
       dir: "rtl",
@@ -270,7 +319,8 @@ document.addEventListener("DOMContentLoaded", () => {
       metric_resp: "تصميم متجاوب",
       metric_auto: "أتمتة ذكية",
       about_title: "لماذا التعاون مع MosaybDev؟",
-      about_subtitle: "الجمع بين الرؤية الهندسية، الكود النظيف، والنتائج العملية لمشروعك",
+      about_subtitle:
+        "الجمع بين الرؤية الهندسية، الكود النظيف، والنتائج العملية لمشروعك",
       bio_heading: "نبذة عني ومنهجية التطوير",
       bio_text:
         "أدرس بكالوريوس هندسة الحاسوب في جامعة سراوان. أركز في مشاريعي على سرعة التحميل، سهولة تجربة المستخدم، وكتابة كود قابل للتطوير؛ من المتاجر الإلكترونية إلى بوتات تيليجرام المتصلة بلوحات تحكم.",
@@ -278,7 +328,8 @@ document.addEventListener("DOMContentLoaded", () => {
       hl_mobile: "توافق تام مع الجوال والحاسوب",
       hl_support: "دعم وتطوير مستمر",
       tg_heading: "القناة والتواصل المباشر",
-      tg_text: "تابع أحدث المشاريع ونصائح البرمجة وبوتات تيليجرام عبر القناة الرسمية أو راسلني مباشرة.",
+      tg_text:
+        "تابع أحدث المشاريع ونصائح البرمجة وبوتات تيليجرام عبر القناة الرسمية أو راسلني مباشرة.",
       tg_cta: "انضم إلى @MosaybDev",
       edu_badge: "طالب جامعي (٢٠٢٢ – ٢٠٢٧)",
       edu_title: "بكالوريوس هندسة الحاسوب",
@@ -287,51 +338,66 @@ document.addEventListener("DOMContentLoaded", () => {
       lang_bal: "البلوشية (اللغة الأم)",
       lang_en: "الإنجليزية (تقنية)",
       srv_web_title: "تصميم وتطوير المواقع والمتاجر",
-      srv_web_desc: "بناء مواقع تعريفية ومتاجر إلكترونية سريعة باستخدام HTML5 و CSS3 و JavaScript.",
+      srv_web_desc:
+        "بناء مواقع تعريفية ومتاجر إلكترونية سريعة باستخدام HTML5 و CSS3 و JavaScript.",
       srv_bot_title: "تطوير بوتات تيليجرام والأتمتة",
-      srv_bot_desc: "برمجة بوتات المتاجر والطلبات والإدارة وربطها بقواعد البيانات عبر Python.",
+      srv_bot_desc:
+        "برمجة بوتات المتاجر والطلبات والإدارة وربطها بقواعد البيانات عبر Python.",
       projects_title: "المشاريع الحية ونماذج الأعمال",
-      projects_subtitle: "صنّف المشاريع حسب المجال أو شاهد المعاينة الحية دون مغادرة الصفحة",
+      projects_subtitle:
+        "صنّف المشاريع حسب المجال أو شاهد المعاينة الحية دون مغادرة الصفحة",
       filter_all: "جميع المشاريع (٢)",
       filter_web: "الويب والمتاجر الإلكترونية",
       filter_bot: "بوتات تيليجرام والأتمتة",
       p1_cat: "متجر إلكتروني للهواتف والأجهزة الرقمية",
       p1_status: "● متصل ويعمل حالياً",
       p1_title: "بلو ماركت (Blue Market)",
-      p1_desc: "منصة تجارة إلكترونية حديثة تضم أكثر من ١٥٠ منتجاً ديناميكياً مع بحث فوري وتصفية ذكية وسلة تسوق متكاملة.",
+      p1_desc:
+        "منصة تجارة إلكترونية حديثة تضم أكثر من ١٥٠ منتجاً ديناميكياً مع بحث فوري وتصفية ذكية وسلة تسوق متكاملة.",
       p_highlights: "التحديات التقنية والحلول:",
-      p1_h1: "<strong>بحث وتصفية فورية:</strong> محرك فلترة متعدد المعايير بـ Vanilla JavaScript دون إعادة تحميل الصفحة.",
-      p1_h2: "<strong>إدارة سلة التسوق:</strong> حفظ المنتجات وإعدادات المستخدم عبر LocalStorage.",
-      p1_h3: "<strong>تصميم Mobile-First:</strong> عرض مثالي على الهواتف الذكية وأجهزة سطح المكتب.",
+      p1_h1:
+        "<strong>بحث وتصفية فورية:</strong> محرك فلترة متعدد المعايير بـ Vanilla JavaScript دون إعادة تحميل الصفحة.",
+      p1_h2:
+        "<strong>إدارة سلة التسوق:</strong> حفظ المنتجات وإعدادات المستخدم عبر LocalStorage.",
+      p1_h3:
+        "<strong>تصميم Mobile-First:</strong> عرض مثالي على الهواتف الذكية وأجهزة سطح المكتب.",
       btn_live_inside: "معاينة حية داخل الموقع",
       btn_source: "الكود المصدري",
       btn_details: "تفاصيل أكثر",
       p2_cat: "نظام أتمتة الخدمات الإلكترونية وبوت تيليجرام",
       p2_status: "● نشط على تيليجرام",
       p2_title: "كافي نت مهندس (CafeNet Engineer)",
-      p2_desc: "منظومة متكاملة لاستقبال الطلبات عن بُعد عبر بوت تيليجرام ولوحة تحكم ويب مع إصدار رمز تتبع فوري.",
-      p2_h1: "<strong>إدارة مراحل المحادثة:</strong> توجيه المستخدم خطوة بخطوة لإدخال البيانات ورفع المستندات.",
-      p2_h2: "<strong>ربط البوت بلوحة التحكم:</strong> اتصال مباشر مع API وقاعدة بيانات لإدارة الطلبات.",
-      p2_h3: "<strong>تسريع الاستجابة:</strong> أتمتة الاستعلامات والمواعيد وإرسال الإيصالات.",
+      p2_desc:
+        "منظومة متكاملة لاستقبال الطلبات عن بُعد عبر بوت تيليجرام ولوحة تحكم ويب مع إصدار رمز تتبع فوري.",
+      p2_h1:
+        "<strong>إدارة مراحل المحادثة:</strong> توجيه المستخدم خطوة بخطوة لإدخال البيانات ورفع المستندات.",
+      p2_h2:
+        "<strong>ربط البوت بلوحة التحكم:</strong> اتصال مباشر مع API وقاعدة بيانات لإدارة الطلبات.",
+      p2_h3:
+        "<strong>تسريع الاستجابة:</strong> أتمتة الاستعلامات والمواعيد وإرسال الإيصالات.",
       btn_bot_sim: "تجربة تفاعلية للبوت",
       btn_open_tg: "فتح في تيليجرام",
       wf_title: "مسار تنفيذ المشروع",
       wf_subtitle: "وضوح تام من الفكرة الأولى حتى الإطلاق والدعم",
       wf1_t: "تحليل المتطلبات والهيكلة",
-      wf1_d: "دراسة أهداف المشروع والميزات المطلوبة واختيار البنية التقنية الأنسب.",
+      wf1_d:
+        "دراسة أهداف المشروع والميزات المطلوبة واختيار البنية التقنية الأنسب.",
       wf2_t: "تصميم واجهة المستخدم",
       wf2_d: "تصميم واجهة عصرية متجاوبة تضمن تجربة سلسة على جميع الشاشات.",
       wf3_t: "التطوير والبرمجة النظيفة",
-      wf3_d: "تنفيذ الواجهة أو البوت بكود منظم وسرعة عالية ومعايير أمان موثوقة.",
+      wf3_d:
+        "تنفيذ الواجهة أو البوت بكود منظم وسرعة عالية ومعايير أمان موثوقة.",
       wf4_t: "الاختبار والإطلاق والدعم",
-      wf4_d: "اختبار شامل على مختلف الأجهزة، النشر الفعلي، ومرافقتك للتطوير المستقبلي.",
+      wf4_d:
+        "اختبار شامل على مختلف الأجهزة، النشر الفعلي، ومرافقتك للتطوير المستقبلي.",
       stack_title: "الأدوات والتقنيات",
       stack_subtitle: "التقنيات التي أستخدمها في بناء المشاريع الواقعية",
       st1_t: "تطوير الواجهات والويب",
       st2_t: "الخلفية والبوتات وقواعد البيانات",
       st3_t: "الأدوات والنشر",
       ct_title: "لنبني مشروعك القادم معاً",
-      ct_subtitle: "تواصل معي لطلب موقع إلكتروني أو بوت تيليجرام أو للتعاون التقني.",
+      ct_subtitle:
+        "تواصل معي لطلب موقع إلكتروني أو بوت تيليجرام أو للتعاون التقني.",
       ct_tg_label: "تيليجرام مباشر (أسرع رد)",
       ct_em_label: "البريد الإلكتروني",
       ct_ph_label: "الهاتف / واتساب",
@@ -352,6 +418,25 @@ document.addEventListener("DOMContentLoaded", () => {
       footer_name: "مصيب شنبه زهي (MosaybDev)",
       footer_built: "تم التطوير بكود نظيف وعناية بالتفاصيل",
       btn_new_tab: "نافذة جديدة",
+      req_err: "يرجى تعبئة هذا الحقل",
+      mail_sent_msg: "✅ تم فتح تطبيق البريد الإلكتروني بنص جاهز.",
+      tg_sent_msg: "✅ رسالتك جاهزة للإرسال عبر تيليجرام (@MosaybDev).",
+      bot_title: "بوت كافي نت مهندس",
+      bot_online: "● متصل — محاكاة تفاعلية",
+      bot_welcome:
+        "مرحباً 👋 أهلاً بك في بوت خدمات كافي نت مهندس. جرّب أحد الخيارات أدناه:",
+      bot_b1: "📝 طلب خدمة جديدة",
+      bot_b2: "🔍 تتبع الطلب",
+      bot_b3: "💳 أسعار الخدمات",
+      bot_b4: "👨‍💻 تواصل مع الإدارة",
+      bot_r1:
+        "✅ تم بدء تسجيل الطلب. اختر نوع الخدمة وأرسل المستندات لإصدار رمز التتبع.",
+      bot_r2:
+        "🔎 حالة الطلب #CN-4026: «تم التحقق من المستندات وقيد التنفيذ» — المدة المتوقعة: ١٥ دقيقة.",
+      bot_r3:
+        "📋 يتم جلب الأسعار تلقائياً من لوحة التحكم وعرض الفاتورة بوضوح قبل الدفع.",
+      bot_r4:
+        "💬 يتم إرسال رسالتك مباشرة إلى الإدارة. استخدم الزر العلوي لفتح البوت في تيليجرام.",
     },
     ur: {
       dir: "rtl",
@@ -386,7 +471,8 @@ document.addEventListener("DOMContentLoaded", () => {
       hl_mobile: "موبائل اور ڈیسک ٹاپ مطابقت",
       hl_support: "مرحلہ وار سپورٹ",
       tg_heading: "آفیشل چینل اور براہ راست رابطہ",
-      tg_text: "تازہ ترین پروجیکٹس اور پروگرامنگ اپڈیٹس کے لیے ٹیلی گرام چینل جوائن کریں۔",
+      tg_text:
+        "تازہ ترین پروجیکٹس اور پروگرامنگ اپڈیٹس کے لیے ٹیلی گرام چینل جوائن کریں۔",
       tg_cta: "@MosaybDev جوائن کریں",
       edu_badge: "زیر تعلیم (۲۰۲۲ – ۲۰۲۷)",
       edu_title: "بی ایس کمپیوٹر انجینئرنگ",
@@ -395,21 +481,27 @@ document.addEventListener("DOMContentLoaded", () => {
       lang_bal: "بلوچی (مادری)",
       lang_en: "انگریزی (تکنیکی)",
       srv_web_title: "ویب سائٹ اور ای کامرس ڈیولپمنٹ",
-      srv_web_desc: "HTML5، CSS3 اور JavaScript کے ساتھ تیز رفتار اور جدید ویب سائٹس کی تیاری۔",
+      srv_web_desc:
+        "HTML5، CSS3 اور JavaScript کے ساتھ تیز رفتار اور جدید ویب سائٹس کی تیاری۔",
       srv_bot_title: "ٹیلی گرام بوٹس اور آٹومیشن",
-      srv_bot_desc: "Python کے ذریعے آرڈر مینجمنٹ اور کاروباری ٹیلی گرام بوٹس کی تیاری۔",
+      srv_bot_desc:
+        "Python کے ذریعے آرڈر مینجمنٹ اور کاروباری ٹیلی گرام بوٹس کی تیاری۔",
       projects_title: "لائیو پروجیکٹس اور نمونے",
-      projects_subtitle: "پروجیکٹس کو فلٹر کریں یا صفحہ چھوڑے بغیر لائیو پریویو دیکھیں",
+      projects_subtitle:
+        "پروجیکٹس کو فلٹر کریں یا صفحہ چھوڑے بغیر لائیو پریویو دیکھیں",
       filter_all: "تمام پروجیکٹس (۲)",
       filter_web: "ویب اور آن لائن اسٹور",
       filter_bot: "ٹیلی گرام بوٹ اور آٹومیشن",
       p1_cat: "موبائل اور ڈیجیٹل مصنوعات کا آن لائن اسٹور",
       p1_status: "● آن لائن فعال",
       p1_title: "بلو مارکیٹ (Blue Market)",
-      p1_desc: "۱۵۰ سے زائد مصنوعات، فوری سرچ، سمارٹ فلٹرنگ اور شاپنگ کارٹ کے ساتھ جدید ای کامرس پلیٹ فارم۔",
+      p1_desc:
+        "۱۵۰ سے زائد مصنوعات، فوری سرچ، سمارٹ فلٹرنگ اور شاپنگ کارٹ کے ساتھ جدید ای کامرس پلیٹ فارم۔",
       p_highlights: "تکنیکی خصوصیات اور حل:",
-      p1_h1: "<strong>فوری سرچ اور فلٹر:</strong> بغیر پیج ریفریش کے Vanilla JavaScript فلٹر انجن۔",
-      p1_h2: "<strong>شاپنگ کارٹ مینجمنٹ:</strong> LocalStorage کے ذریعے محفوظ ڈیٹا۔",
+      p1_h1:
+        "<strong>فوری سرچ اور فلٹر:</strong> بغیر پیج ریفریش کے Vanilla JavaScript فلٹر انجن۔",
+      p1_h2:
+        "<strong>شاپنگ کارٹ مینجمنٹ:</strong> LocalStorage کے ذریعے محفوظ ڈیٹا۔",
       p1_h3: "<strong>موبائل فرسٹ ڈیزائن:</strong> ہر اسکرین پر بہترین ڈسپلے۔",
       btn_live_inside: "سائٹ میں لائیو دیکھیں",
       btn_source: "سورس کوڈ",
@@ -417,9 +509,12 @@ document.addEventListener("DOMContentLoaded", () => {
       p2_cat: "آن لائن سروس آٹومیشن اور ٹیلی گرام بوٹ",
       p2_status: "● ٹیلی گرام پر فعال",
       p2_title: "کافی نیٹ انجینئر (CafeNet Engineer)",
-      p2_desc: "ٹیلی گرام بوٹ اور ویب ایڈمن پینل کے ذریعے آن لائن آرڈرز اور دستاویزات جمع کرانے کا خودکار نظام۔",
-      p2_h1: "<strong>مرحلہ وار گفتگو سسٹم:</strong> صارف کی آسانی کے لیے گائیڈڈ فلو۔",
-      p2_h2: "<strong>بوٹ اور ویب پینل انضمام:</strong> مرکزی API اور ڈیٹا بیس سے منسلک۔",
+      p2_desc:
+        "ٹیلی گرام بوٹ اور ویب ایڈمن پینل کے ذریعے آن لائن آرڈرز اور دستاویزات جمع کرانے کا خودکار نظام۔",
+      p2_h1:
+        "<strong>مرحلہ وار گفتگو سسٹم:</strong> صارف کی آسانی کے لیے گائیڈڈ فلو۔",
+      p2_h2:
+        "<strong>بوٹ اور ویب پینل انضمام:</strong> مرکزی API اور ڈیٹا بیس سے منسلک۔",
       p2_h3: "<strong>تیز رفتار سروس:</strong> خودکار نرخ نامہ اور رسید۔",
       btn_bot_sim: "بوٹ کا لائیو ڈیمو",
       btn_open_tg: "ٹیلی گرام میں کھولیں",
@@ -439,7 +534,8 @@ document.addEventListener("DOMContentLoaded", () => {
       st2_t: "بیک اینڈ، بوٹس اور ڈیٹا بیس",
       st3_t: "ٹولز اور ڈیپلائمنٹ",
       ct_title: "آئیے اگلا پروجیکٹ مل کر بنائیں",
-      ct_subtitle: "ویب سائٹ یا ٹیلی گرام بوٹ بنوانے کے لیے براہ راست رابطہ کریں۔",
+      ct_subtitle:
+        "ویب سائٹ یا ٹیلی گرام بوٹ بنوانے کے لیے براہ راست رابطہ کریں۔",
       ct_tg_label: "براہ راست ٹیلی گرام",
       ct_em_label: "آفیشل ای میل",
       ct_ph_label: "فون / واٹس ایپ",
@@ -460,6 +556,26 @@ document.addEventListener("DOMContentLoaded", () => {
       footer_name: "مصیب شنبہ زہی (MosaybDev)",
       footer_built: "صاف کوڈنگ اور باریک بینی سے تیار کردہ",
       btn_new_tab: "نیا ٹیب",
+      req_err: "براہ کرم یہ حصہ مکمل کریں",
+      mail_sent_msg: "✅ آپ کا ای میل کلائنٹ تیار متن کے ساتھ کھل گیا ہے۔",
+      tg_sent_msg:
+        "✅ آپ کا پیغام ٹیلی گرام (@MosaybDev) پر بھیجنے کے لیے تیار ہے۔",
+      bot_title: "کافی نیٹ انجینئر بوٹ",
+      bot_online: "● آن لائن — انٹرایکٹو ڈیمو",
+      bot_welcome:
+        "خوش آمدید 👋 کافی نیٹ انجینئر بوٹ میں۔ نیچے دیے گئے بٹن آزمائیں:",
+      bot_b1: "📝 نیا آرڈر",
+      bot_b2: "🔍 آرڈر ٹریک کریں",
+      bot_b3: "💳 نرخ نامہ",
+      bot_b4: "👨‍💻 ایڈمن سے رابطہ",
+      bot_r1:
+        "✅ نیا آرڈر شروع ہو گیا ہے۔ سروس منتخب کریں اور دستاویزات بھیجیں۔",
+      bot_r2:
+        "🔎 آرڈر #CN-4026 کی حالت: «دستاویزات منظور اور کام جاری ہے» — متوقع وقت: ۱۵ منٹ۔",
+      bot_r3:
+        "📋 نرخ ایڈمن پینل سے اپڈیٹ ہوتے ہیں اور ادائیگی سے پہلے واضح دکھائے جاتے ہیں۔",
+      bot_r4:
+        "💬 آپ کا پیغام ایڈمن پینل کو جاتا ہے۔ لائیو بوٹ کے لیے اوپر والا بٹن دبائیں۔",
     },
     fr: {
       dir: "ltr",
@@ -486,7 +602,8 @@ document.addEventListener("DOMContentLoaded", () => {
       metric_resp: "Design Réactif",
       metric_auto: "Automatisation",
       about_title: "Pourquoi collaborer avec MosaybDev ?",
-      about_subtitle: "Approche d'ingénierie, code propre et résultats concrets",
+      about_subtitle:
+        "Approche d'ingénierie, code propre et résultats concrets",
       bio_heading: "À propos et approche technique",
       bio_text:
         "Étudiant en génie informatique à l'Université de Saravan. Je privilégie la rapidité de chargement, une UX fluide et un code maintenable, des boutiques e-commerce aux bots Telegram.",
@@ -494,7 +611,8 @@ document.addEventListener("DOMContentLoaded", () => {
       hl_mobile: "Compatible mobile & ordinateur",
       hl_support: "Accompagnement étape par étape",
       tg_heading: "Chaîne officielle & contact direct",
-      tg_text: "Suivez mes derniers projets et astuces de développement sur Telegram.",
+      tg_text:
+        "Suivez mes derniers projets et astuces de développement sur Telegram.",
       tg_cta: "Rejoindre @MosaybDev",
       edu_badge: "En cours (2022 – 2027)",
       edu_title: "Licence en Génie Informatique",
@@ -505,36 +623,47 @@ document.addEventListener("DOMContentLoaded", () => {
       srv_web_title: "Création de sites Web & E-commerce",
       srv_web_desc: "Sites rapides et modernes avec HTML5, CSS3 et JavaScript.",
       srv_bot_title: "Bots Telegram & Automatisation",
-      srv_bot_desc: "Développement de bots de commande et gestion connectés en Python.",
+      srv_bot_desc:
+        "Développement de bots de commande et gestion connectés en Python.",
       projects_title: "Projets en direct & Réalisations",
-      projects_subtitle: "Filtrez par catégorie ou testez l'aperçu en direct sans quitter la page",
+      projects_subtitle:
+        "Filtrez par catégorie ou testez l'aperçu en direct sans quitter la page",
       filter_all: "Tous les projets (2)",
       filter_web: "Web & E-Commerce",
       filter_bot: "Bots Telegram",
       p1_cat: "Boutique en ligne Mobile & High-Tech",
       p1_status: "● En ligne",
       p1_title: "Blue Market",
-      p1_desc: "Plateforme e-commerce moderne avec plus de 150 produits dynamiques, recherche instantanée et panier persistant.",
+      p1_desc:
+        "Plateforme e-commerce moderne avec plus de 150 produits dynamiques, recherche instantanée et panier persistant.",
       p_highlights: "Défis techniques et solutions :",
-      p1_h1: "<strong>Filtrage instantané :</strong> Recherche multicritère en Vanilla JS sans rechargement.",
-      p1_h2: "<strong>Gestion du panier :</strong> Sauvegarde durable via LocalStorage.",
-      p1_h3: "<strong>Design Mobile-First :</strong> Affichage optimal sur mobile et desktop.",
+      p1_h1:
+        "<strong>Filtrage instantané :</strong> Recherche multicritère en Vanilla JS sans rechargement.",
+      p1_h2:
+        "<strong>Gestion du panier :</strong> Sauvegarde durable via LocalStorage.",
+      p1_h3:
+        "<strong>Design Mobile-First :</strong> Affichage optimal sur mobile et desktop.",
       btn_live_inside: "Aperçu en direct ici",
       btn_source: "Code source",
       btn_details: "Plus de détails",
       p2_cat: "Automatisation de services & Bot Telegram",
       p2_status: "● Actif sur Telegram",
       p2_title: "CafeNet Engineer",
-      p2_desc: "Système complet de prise de commandes à distance via bot Telegram et tableau de bord Web.",
-      p2_h1: "<strong>Machine à états :</strong> Parcours guidé étape par étape pour les clients.",
-      p2_h2: "<strong>Synchronisation Bot & Web :</strong> Connexion API et base de données centrale.",
-      p2_h3: "<strong>Gain de temps :</strong> Automatisation des tarifs, rendez-vous et reçus.",
+      p2_desc:
+        "Système complet de prise de commandes à distance via bot Telegram et tableau de bord Web.",
+      p2_h1:
+        "<strong>Machine à états :</strong> Parcours guidé étape par étape pour les clients.",
+      p2_h2:
+        "<strong>Synchronisation Bot & Web :</strong> Connexion API et base de données centrale.",
+      p2_h3:
+        "<strong>Gain de temps :</strong> Automatisation des tarifs, rendez-vous et reçus.",
       btn_bot_sim: "Démo interactive du bot",
       btn_open_tg: "Ouvrir dans Telegram",
       wf_title: "Processus de réalisation",
       wf_subtitle: "Transparence totale de l'idée initiale au déploiement",
       wf1_t: "Analyse & Architecture",
-      wf1_d: "Étude des besoins et choix de la meilleure architecture technique.",
+      wf1_d:
+        "Étude des besoins et choix de la meilleure architecture technique.",
       wf2_t: "Design UI/UX",
       wf2_d: "Interfaces modernes et adaptatives pour tous les écrans.",
       wf3_t: "Développement propre",
@@ -547,7 +676,8 @@ document.addEventListener("DOMContentLoaded", () => {
       st2_t: "Backend, Bots & Données",
       st3_t: "Outils & Déploiement",
       ct_title: "Construisons votre prochain projet",
-      ct_subtitle: "Contactez-moi pour un site Web, une boutique ou un bot Telegram.",
+      ct_subtitle:
+        "Contactez-moi pour un site Web, une boutique ou un bot Telegram.",
       ct_tg_label: "Telegram direct (Réponse rapide)",
       ct_em_label: "Email officiel",
       ct_ph_label: "Téléphone / WhatsApp",
@@ -568,6 +698,26 @@ document.addEventListener("DOMContentLoaded", () => {
       footer_name: "Mosayb Shanbezehi (MosaybDev)",
       footer_built: "Conçu avec un code propre et le souci du détail",
       btn_new_tab: "Nouvel onglet",
+      req_err: "Veuillez remplir ce champ",
+      mail_sent_msg: "✅ Votre client mail s'est ouvert avec le message prêt.",
+      tg_sent_msg:
+        "✅ Votre message est prêt à être envoyé sur Telegram (@MosaybDev).",
+      bot_title: "Bot CafeNet Engineer",
+      bot_online: "● En ligne — Simulateur interactif",
+      bot_welcome:
+        "Bonjour 👋 Bienvenue sur le bot CafeNet Engineer. Essayez une option :",
+      bot_b1: "📝 Nouvelle commande",
+      bot_b2: "🔍 Suivre commande",
+      bot_b3: "💳 Tarifs",
+      bot_b4: "👨‍💻 Contacter l'admin",
+      bot_r1:
+        "✅ Commande démarrée. Choisissez un service et envoyez vos documents.",
+      bot_r2:
+        "🔎 Commande #CN-4026 : « Documents vérifiés et en cours » — Délai estimé : 15 min.",
+      bot_r3:
+        "📋 Les tarifs sont synchronisés depuis le panneau admin avant paiement.",
+      bot_r4:
+        "💬 Votre message est envoyé à l'admin. Utilisez le bouton en haut pour Telegram.",
     },
     it: {
       dir: "ltr",
@@ -594,7 +744,8 @@ document.addEventListener("DOMContentLoaded", () => {
       metric_resp: "Design Reattivo",
       metric_auto: "Automazione",
       about_title: "Perché collaborare con MosaybDev?",
-      about_subtitle: "Approccio ingegneristico, codice pulito e risultati concreti",
+      about_subtitle:
+        "Approccio ingegneristico, codice pulito e risultati concreti",
       bio_heading: "Chi sono e approccio allo sviluppo",
       bio_text:
         "Studio Ingegneria Informatica all'Università di Saravan. Nei miei progetti punto su velocità, UX intuitiva e codice manutenibile, dagli e-commerce ai bot Telegram.",
@@ -602,7 +753,8 @@ document.addEventListener("DOMContentLoaded", () => {
       hl_mobile: "Ottimizzato per mobile e desktop",
       hl_support: "Supporto passo dopo passo",
       tg_heading: "Canale ufficiale e contatto diretto",
-      tg_text: "Segui gli ultimi progetti e aggiornamenti su Telegram o scrivimi direttamente.",
+      tg_text:
+        "Segui gli ultimi progetti e aggiornamenti su Telegram o scrivimi direttamente.",
       tg_cta: "Unisciti a @MosaybDev",
       edu_badge: "In corso (2022 – 2027)",
       edu_title: "Laurea in Ingegneria Informatica",
@@ -613,49 +765,62 @@ document.addEventListener("DOMContentLoaded", () => {
       srv_web_title: "Sviluppo Siti Web ed E-Commerce",
       srv_web_desc: "Siti veloci e moderni con HTML5, CSS3 e JavaScript.",
       srv_bot_title: "Bot Telegram e Automazione",
-      srv_bot_desc: "Sviluppo di bot gestionali e per ordini collegati a database in Python.",
+      srv_bot_desc:
+        "Sviluppo di bot gestionali e per ordini collegati a database in Python.",
       projects_title: "Progetti Live e Case Study",
-      projects_subtitle: "Filtra per categoria o prova l'anteprima live senza lasciare la pagina",
+      projects_subtitle:
+        "Filtra per categoria o prova l'anteprima live senza lasciare la pagina",
       filter_all: "Tutti i progetti (2)",
       filter_web: "Web ed E-Commerce",
       filter_bot: "Bot Telegram e Automazione",
       p1_cat: "E-Commerce Mobile e Prodotti Digitali",
       p1_status: "● Online Attivo",
       p1_title: "Blue Market",
-      p1_desc: "Piattaforma e-commerce moderna con oltre 150 prodotti dinamici, ricerca istantanea e carrello persistente.",
+      p1_desc:
+        "Piattaforma e-commerce moderna con oltre 150 prodotti dinamici, ricerca istantanea e carrello persistente.",
       p_highlights: "Sfide tecniche e soluzioni:",
-      p1_h1: "<strong>Filtro istantaneo:</strong> Ricerca multi-criterio in Vanilla JS senza ricaricare la pagina.",
-      p1_h2: "<strong>Gestione carrello:</strong> Salvataggio persistente tramite LocalStorage.",
-      p1_h3: "<strong>Design Mobile-First:</strong> Layout perfetto su smartphone e desktop.",
+      p1_h1:
+        "<strong>Filtro istantaneo:</strong> Ricerca multi-criterio in Vanilla JS senza ricaricare la pagina.",
+      p1_h2:
+        "<strong>Gestione carrello:</strong> Salvataggio persistente tramite LocalStorage.",
+      p1_h3:
+        "<strong>Design Mobile-First:</strong> Layout perfetto su smartphone e desktop.",
       btn_live_inside: "Anteprima live qui",
       btn_source: "Codice sorgente",
       btn_details: "Maggiori dettagli",
       p2_cat: "Automazione Servizi Online e Bot Telegram",
       p2_status: "● Attivo su Telegram",
       p2_title: "CafeNet Engineer",
-      p2_desc: "Sistema integrato per ordini da remoto tramite bot Telegram e pannello di controllo Web.",
-      p2_h1: "<strong>Macchina a stati:</strong> Flusso guidato passo dopo passo per l'invio documenti.",
-      p2_h2: "<strong>Sincronizzazione Bot e Web:</strong> Collegamento con API e database centrale.",
-      p2_h3: "<strong>Risposta rapida:</strong> Automazione di listini, appuntamenti e ricevute.",
+      p2_desc:
+        "Sistema integrato per ordini da remoto tramite bot Telegram e pannello di controllo Web.",
+      p2_h1:
+        "<strong>Macchina a stati:</strong> Flusso guidato passo dopo passo per l'invio documenti.",
+      p2_h2:
+        "<strong>Sincronizzazione Bot e Web:</strong> Collegamento con API e database centrale.",
+      p2_h3:
+        "<strong>Risposta rapida:</strong> Automazione di listini, appuntamenti e ricevute.",
       btn_bot_sim: "Demo interattiva bot",
       btn_open_tg: "Apri in Telegram",
       wf_title: "Metodo di lavoro",
       wf_subtitle: "Chiarezza dalla prima idea fino al lancio e al supporto",
       wf1_t: "Analisi e Architettura",
-      wf1_d: "Studio degli obiettivi e scelta della migliore struttura tecnica.",
+      wf1_d:
+        "Studio degli obiettivi e scelta della migliore struttura tecnica.",
       wf2_t: "Design UI/UX",
       wf2_d: "Interfacce moderne e reattive per ogni dispositivo.",
       wf3_t: "Sviluppo pulito",
       wf3_d: "Codice modulare, veloce e sicuro.",
       wf4_t: "Test, Lancio e Supporto",
-      wf4_d: "Test multi-dispositivo, pubblicazione online e assistenza continua.",
+      wf4_d:
+        "Test multi-dispositivo, pubblicazione online e assistenza continua.",
       stack_title: "Strumenti e Tecnologie",
       stack_subtitle: "Tecnologie che utilizzo in progetti reali",
       st1_t: "Frontend e Web",
       st2_t: "Backend, Bot e Dati",
       st3_t: "Strumenti e Deploy",
       ct_title: "Costruiamo il tuo prossimo progetto",
-      ct_subtitle: "Contattami per un sito Web, un negozio online o un bot Telegram.",
+      ct_subtitle:
+        "Contattami per un sito Web, un negozio online o un bot Telegram.",
       ct_tg_label: "Telegram diretto (Risposta rapida)",
       ct_em_label: "Email ufficiale",
       ct_ph_label: "Telefono / WhatsApp",
@@ -676,6 +841,25 @@ document.addEventListener("DOMContentLoaded", () => {
       footer_name: "Mosayb Shanbezehi (MosaybDev)",
       footer_built: "Realizzato con codice pulito e cura per i dettagli",
       btn_new_tab: "Nuova scheda",
+      req_err: "Compila questo campo",
+      mail_sent_msg: "✅ Il client email si è aperto con il testo pronto.",
+      tg_sent_msg: "✅ Messaggio pronto per l'invio su Telegram (@MosaybDev).",
+      bot_title: "Bot CafeNet Engineer",
+      bot_online: "● Online — Simulatore interattivo",
+      bot_welcome:
+        "Ciao 👋 Benvenuto nel bot CafeNet Engineer. Prova un'opzione qui sotto:",
+      bot_b1: "📝 Nuovo ordine",
+      bot_b2: "🔍 Traccia ordine",
+      bot_b3: "💳 Listino",
+      bot_b4: "👨‍💻 Contatta admin",
+      bot_r1:
+        "✅ Ordine avviato. Seleziona un servizio e invia i documenti per il codice.",
+      bot_r2:
+        "🔎 Ordine #CN-4026: «Documenti verificati e in lavorazione» — Tempo stimato: 15 min.",
+      bot_r3:
+        "📋 Le tariffe sono sincronizzate dal pannello admin prima del pagamento.",
+      bot_r4:
+        "💬 Il messaggio arriva all'admin. Usa il pulsante in alto per aprire Telegram.",
     },
   };
 
@@ -924,7 +1108,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  /* ========== In-Page Live Preview Modal (Zero Page Leave) ========== */
+  /* ========== In-Page Live Preview Modal ========== */
   const livePreviewModal = document.getElementById("livePreviewModal");
   const previewStage = document.getElementById("previewStage");
   const previewUrlText = document.getElementById("previewUrlText");
@@ -932,6 +1116,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function openLivePreview(projectId) {
     if (!livePreviewModal || !previewStage) return;
+    const dict = translations[currentLang] || translations.fa;
 
     if (projectId === "blue-market") {
       const url = "https://mosayb-dev.github.io/BlueMarket.ir/";
@@ -947,41 +1132,43 @@ document.addEventListener("DOMContentLoaded", () => {
           <div class="bot-sim-head">
             <div class="bot-avatar">CN</div>
             <div>
-              <strong style="display:block;font-size:14px;">ربات کافی‌نت مهندس</strong>
-              <small style="color:#34d399;font-size:11px;">● آنلاین — شبیه‌ساز تعاملی</small>
+              <strong style="display:block;font-size:14px;">${dict.bot_title}</strong>
+              <small style="color:#34d399;font-size:11px;">${dict.bot_online}</small>
             </div>
           </div>
           <div class="bot-sim-messages" id="botSimMsgs">
-            <div class="bot-msg">سلام 👋 به ربات خدمات غیرحضوری کافی‌نت مهندس خوش آمدید. یکی از گزینه‌های زیر را امتحان کنید:</div>
+            <div class="bot-msg">${dict.bot_welcome}</div>
           </div>
           <div class="bot-sim-keyboard">
-            <button type="button" data-sim="ثبت سفارش جدید">📝 ثبت سفارش جدید</button>
-            <button type="button" data-sim="پیگیری سفارش">🔍 پیگیری با کد رهگیری</button>
-            <button type="button" data-sim="تعرفه خدمات">💳 تعرفه خدمات</button>
-            <button type="button" data-sim="ارتباط با پشتیبان">👨‍💻 ارتباط با مدیر</button>
+            <button type="button" data-sim="r1">${dict.bot_b1}</button>
+            <button type="button" data-sim="r2">${dict.bot_b2}</button>
+            <button type="button" data-sim="r3">${dict.bot_b3}</button>
+            <button type="button" data-sim="r4">${dict.bot_b4}</button>
           </div>
         </div>
       `;
 
+      const buttonLabels = {
+        r1: dict.bot_b1,
+        r2: dict.bot_b2,
+        r3: dict.bot_b3,
+        r4: dict.bot_b4,
+      };
       const replies = {
-        "ثبت سفارش جدید":
-          "✅ بخش ثبت سفارش فعال شد. نوع خدمت (دانشگاهی، قضایی، مالیاتی یا ثبت‌نام) را انتخاب و مدارک را ارسال کنید تا کد پیگیری صادر شود.",
-        "پیگیری سفارش":
-          "🔎 وضعیت سفارش #CN-4026: «تأیید مدارک و در حال انجام توسط اپراتور» — زمان تحویل تخمینی: ۱۵ دقیقه.",
-        "تعرفه خدمات":
-          "📋 لیست تعرفه‌ها به‌صورت خودکار از پنل مدیریت خوانده می‌شود و پیش از پرداخت فاکتور دقیق نمایش داده می‌شود.",
-        "ارتباط با پشتیبان":
-          "💬 پیام شما مستقیم به پنل مدیریت ارسال می‌شود. برای اجرای واقعی ربات می‌توانید از دکمه بالای پنجره وارد تلگرام شوید.",
+        r1: dict.bot_r1,
+        r2: dict.bot_r2,
+        r3: dict.bot_r3,
+        r4: dict.bot_r4,
       };
 
       previewStage.querySelectorAll("[data-sim]").forEach((b) => {
         b.addEventListener("click", () => {
-          const q = b.getAttribute("data-sim") || "";
+          const key = b.getAttribute("data-sim") || "r1";
           const box = document.getElementById("botSimMsgs");
           if (!box) return;
-          box.innerHTML += `<div class="bot-msg user">${q}</div>`;
+          box.innerHTML += `<div class="bot-msg user">${buttonLabels[key]}</div>`;
           setTimeout(() => {
-            box.innerHTML += `<div class="bot-msg">${replies[q] || ""}</div>`;
+            box.innerHTML += `<div class="bot-msg">${replies[key] || ""}</div>`;
             box.scrollTop = box.scrollHeight;
           }, 260);
         });
@@ -1025,7 +1212,14 @@ document.addEventListener("DOMContentLoaded", () => {
         "مدیریت وضعیت سبد خرید و علاقه‌مندی‌ها با LocalStorage",
         "بهینه‌سازی کامل رابط کاربری برای نمایش در موبایل و دسکتاپ",
       ],
-      tags: ["HTML5", "CSS3", "Vanilla JS", "Bootstrap 5", "Responsive UI", "LocalStorage"],
+      tags: [
+        "HTML5",
+        "CSS3",
+        "Vanilla JS",
+        "Bootstrap 5",
+        "Responsive UI",
+        "LocalStorage",
+      ],
       demo: "https://mosayb-dev.github.io/BlueMarket.ir/",
       demoLabel: "مشاهده سایت زنده",
       demoIcon: "fa-solid fa-up-right-from-square",
@@ -1035,13 +1229,20 @@ document.addEventListener("DOMContentLoaded", () => {
       title: "کافی‌نت مهندس (CafeNet Engineer)",
       type: "سامانه یکپارچه ربات تلگرام و پنل مدیریت کافی‌نت",
       images: ["cafenet-bot-menu.png", "cafenet-bot-services.png"],
-      desc: "پلتفرم اتوماسیون خدمات آنلاین و غیرحضوری کافی‌نت. مشتریان از طریق ربات تلگرامی سفارش خود را ثبت کرده، مدارک و فیش واریزی را ارسال می‌کنند و کد رهگیری دریافت می‌نمایند؛ هم‌زمان مدیر از طریق پنل وب سفارش‌ها و تعرفه‌ها را کنترل می‌کند.",
+      desc: "پلتفرم اتوماسیون خدمات آنلاین و غیرحضوری کافی‌نت. مشتریان از طریق ربات تلگرامی سفارش خود را ثبت کرده، مدارک و فیش واریزی را ارسال می‌کنند و کد پیگیری دریافت می‌نمایند؛ هم‌زمان مدیر از طریق پنل وب سفارش‌ها و تعرفه‌ها را کنترل می‌کند.",
       highlights: [
         "طراحی جریان مکالمه مرحله‌به‌مرحله در تلگرام برای ثبت سفارش و ارسال مدارک",
         "ذخیره‌سازی ساخت‌یافته سفارش‌ها، تیکت‌ها و نوبت‌های حضوری در دیتابیس SQLite",
         "اتصال ربات به بک‌اند FastAPI و داشبورد مدیریتی تحت وب",
       ],
-      tags: ["Python", "Telegram Bot API", "FastAPI", "SQLite", "Admin Panel", "HTML/CSS/JS"],
+      tags: [
+        "Python",
+        "Telegram Bot API",
+        "FastAPI",
+        "SQLite",
+        "Admin Panel",
+        "HTML/CSS/JS",
+      ],
       demo: "https://t.me/CafeNetMohandesBot",
       demoLabel: "اجرای ربات در تلگرام",
       demoIcon: "fa-brands fa-telegram",
@@ -1145,6 +1346,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const sendTelegramBtn = document.getElementById("sendTelegramBtn");
 
   function validateContactForm() {
+    const dict = translations[currentLang] || translations.fa;
     let valid = true;
     ["name", "email", "message"].forEach((id) => {
       const input = document.getElementById(id);
@@ -1155,7 +1357,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       if (!input.value.trim()) {
         input.classList.add("invalid");
-        err.textContent = "لطفاً این بخش را تکمیل کنید";
+        err.textContent = dict.req_err;
         valid = false;
       }
     });
@@ -1165,35 +1367,39 @@ document.addEventListener("DOMContentLoaded", () => {
   contactForm?.addEventListener("submit", (e) => {
     e.preventDefault();
     if (!validateContactForm()) return;
+    const dict = translations[currentLang] || translations.fa;
 
     const name = document.getElementById("name")?.value.trim() || "";
     const contact = document.getElementById("email")?.value.trim() || "";
-    const subject = document.getElementById("subject")?.value || "پیام از سایت";
+    const subject =
+      document.getElementById("subject")?.value || "Website Message";
     const message = document.getElementById("message")?.value.trim() || "";
 
-    const mailBody = `نام: ${name}%0D%0Aراه ارتباطی: ${contact}%0D%0Aموضوع: ${subject}%0D%0A%0D%0Aمتن پیام:%0D%0A${encodeURIComponent(message)}`;
+    const mailBody = `Name: ${name}%0D%0AContact: ${contact}%0D%0ASubject: ${subject}%0D%0A%0D%0AMessage:%0D%0A${encodeURIComponent(message)}`;
     window.location.href = `mailto:mshanbhzhi@gmail.com?subject=${encodeURIComponent(
       `${subject} - ${name}`,
     )}&body=${mailBody}`;
 
     if (formStatus) {
-      formStatus.textContent = "✅ برنامه ایمیل شما با متن آماده باز شد.";
+      formStatus.textContent = dict.mail_sent_msg;
     }
   });
 
   sendTelegramBtn?.addEventListener("click", () => {
     if (!validateContactForm()) return;
+    const dict = translations[currentLang] || translations.fa;
 
     const name = document.getElementById("name")?.value.trim() || "";
     const contact = document.getElementById("email")?.value.trim() || "";
-    const subject = document.getElementById("subject")?.value || "پیام از سایت";
+    const subject =
+      document.getElementById("subject")?.value || "Website Message";
     const message = document.getElementById("message")?.value.trim() || "";
 
-    const text = `سلام مصیب عزیز، از سایت رزومه پیام میدم:%0A👤 نام: ${encodeURIComponent(
+    const text = `Message from portfolio:%0A👤 ${encodeURIComponent(
       name,
-    )}%0A📌 موضوع: ${encodeURIComponent(subject)}%0A📞 راه ارتباطی: ${encodeURIComponent(
+    )}%0A📌 ${encodeURIComponent(subject)}%0A📞 ${encodeURIComponent(
       contact,
-    )}%0A📝 پیام: ${encodeURIComponent(message)}`;
+    )}%0A📝 ${encodeURIComponent(message)}`;
     window.open(
       `https://t.me/MosaybDev?text=${text}`,
       "_blank",
@@ -1201,8 +1407,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
 
     if (formStatus) {
-      formStatus.textContent =
-        "✅ پیام شما آماده ارسال در تلگرام (@MosaybDev) شد.";
+      formStatus.textContent = dict.tg_sent_msg;
     }
   });
 
