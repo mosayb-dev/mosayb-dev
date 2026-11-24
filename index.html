@@ -1,131 +1,122 @@
 <!DOCTYPE html>
-<html dir="rtl" lang="fa" data-theme="dark">
+<html lang="fa" dir="rtl" data-theme="dark">
 <head>
-  <meta charset="utf-8" />
+  <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#050811" />
-  <meta name="description" content="مصیب شنبه‌زهی — مهندس نرم‌افزار، توسعه‌دهنده وب و معمار ربات‌های تلگرامی. مشاهده پروژه‌های زنده، معماری فنی و راه‌های همکاری." />
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="مصیب شنبه‌زهی | توسعه‌دهنده وب و ربات‌های هوشمند" />
-  <meta property="og:description" content="نمونه‌کارهای واقعی، سیستم‌های اتوماسیون تلگرام و فروشگاه‌های مدرن از مصیب شنبه‌زهی." />
-  <meta property="og:image" content="og-image.jpg" />
-  <title>مصیب شنبه‌زهی | مهندسی وب و توسعه سیستم‌های هوشمند</title>
-
-  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='24' fill='%23060a14'/%3E%3Cpath d='M25 72V28h12l13 22 13-22h12v44H63V48L50 68 37 48v24H25z' fill='%2338bdf8'/%3E%3C/svg%3E" />
+  <title>مصیب شنبه زهی | توسعه‌دهنده وب و ربات تلگرام — MosaybDev</title>
+  <meta name="description" content="نمونه‌کارها و رزومه مصیب شنبه زهی (MosaybDev) - طراحی وب‌سایت، فروشگاه اینترنتی و توسعه ربات‌های تلگرام با پایتون." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Noto+Nastaliq+Urdu:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
   <link rel="stylesheet" href="style.css" />
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "مصیب شنبه‌زهی",
-    "alternateName": "MosaybDev",
-    "jobTitle": "توسعه‌دهنده وب و ربات‌های تلگرامی",
-    "email": "mshanbhzhi@gmail.com",
-    "telephone": "+989229480252",
-    "url": "https://mosayb-dev.github.io/",
-    "sameAs": [
-      "https://github.com/mosayb-dev",
-      "https://t.me/MosaybDev"
-    ],
-    "address": {
-      "@type": "PostalAddress",
-      "addressLocality": "گلشن",
-      "addressCountry": "IR"
-    },
-    "alumniOf": {
-      "@type": "CollegeOrUniversity",
-      "name": "دانشگاه سراوان"
-    }
-  }
-  </script>
 </head>
 <body>
   <div class="scroll-progress" id="scrollProgress"></div>
-  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
-  <div class="noise-overlay" aria-hidden="true"></div>
-  <div class="mesh-bg" aria-hidden="true">
+  <div class="mesh-bg">
     <div class="mesh-orb orb-1"></div>
     <div class="mesh-orb orb-2"></div>
     <div class="mesh-orb orb-3"></div>
   </div>
+  <div class="noise-overlay"></div>
+  <div class="cursor-glow" id="cursorGlow"></div>
 
-  <!-- Navigation -->
+  <!-- Floating Glass Navbar -->
   <header class="topbar" id="topbar">
-    <a href="#top" class="brand" aria-label="خانه">
+    <a href="#" class="brand">
       <span class="brand-badge">M</span>
-      <span class="brand-text">MOSAYB<span class="accent">.DEV</span></span>
+      <span>MOSAYB<span class="accent">.DEV</span></span>
     </a>
 
-    <nav class="nav-links" aria-label="منوی اصلی">
-      <a href="#bento-about">درباره من</a>
-      <a href="#projects">پروژه‌ها</a>
-      <a href="#workflow">فرآیند کار</a>
-      <a href="#stack">تکنولوژی‌ها</a>
-      <a href="#contact">تماس</a>
+    <nav class="nav-links" aria-label="Primary Navigation">
+      <a href="#about" data-i18n="nav_about">درباره من</a>
+      <a href="#projects" data-i18n="nav_projects">پروژه‌ها</a>
+      <a href="#workflow" data-i18n="nav_workflow">فرآیند کار</a>
+      <a href="#stack" data-i18n="nav_stack">تکنولوژی‌ها</a>
+      <a href="#contact" data-i18n="nav_contact">تماس</a>
     </nav>
 
     <div class="nav-actions">
-      <button class="icon-btn" id="themeToggle" aria-label="تغییر تم روشن و تاریک" title="تغییر تم">
+      <!-- Language Switcher -->
+      <div class="lang-switcher" id="langSwitcher">
+        <button type="button" class="lang-btn" id="langBtn" aria-label="تغییر زبان">
+          <i class="fa-solid fa-globe"></i>
+          <span id="currentLangLabel">FA</span>
+          <i class="fa-solid fa-chevron-down chevron"></i>
+        </button>
+        <div class="lang-dropdown" id="langDropdown" role="menu">
+          <button type="button" data-lang="fa" class="active"><span>🇮🇷</span> فارسی</button>
+          <button type="button" data-lang="en"><span>🇬🇧</span> English</button>
+          <button type="button" data-lang="ar"><span>🇸🇦</span> العربية</button>
+          <button type="button" data-lang="ur"><span>🇵🇰</span> اردو</button>
+          <button type="button" data-lang="fr"><span>🇫🇷</span> Français</button>
+          <button type="button" data-lang="it"><span>🇮🇹</span> Italiano</button>
+        </div>
+      </div>
+
+      <button type="button" class="icon-btn" id="themeToggle" aria-label="تغییر پوسته">
         <i class="fa-solid fa-moon"></i>
       </button>
+
       <a href="https://t.me/MosaybDev" target="_blank" rel="noopener" class="nav-pill-btn">
-        <i class="fa-brands fa-telegram"></i> کانال تلگرام
+        <i class="fa-brands fa-telegram"></i>
+        <span data-i18n="nav_channel">کانال تلگرام</span>
       </a>
-      <button class="icon-btn hamburger" id="hamburger" aria-label="باز کردن منو">
+
+      <button type="button" class="icon-btn hamburger" id="hamburger" aria-label="منو">
         <i class="fa-solid fa-bars"></i>
       </button>
     </div>
   </header>
 
+  <!-- Mobile Drawer -->
   <div class="mobile-drawer" id="mobileMenu">
-    <a href="#bento-about">درباره من و مهارت‌ها</a>
-    <a href="#projects">نمونه‌کارهای زنده</a>
-    <a href="#workflow">مراحل اجرای پروژه</a>
-    <a href="#stack">پشته فنی</a>
-    <a href="#contact">ثبت سفارش / تماس</a>
+    <a href="#about" data-i18n="nav_about">درباره من</a>
+    <a href="#projects" data-i18n="nav_projects">پروژه‌ها</a>
+    <a href="#workflow" data-i18n="nav_workflow">فرآیند کار</a>
+    <a href="#stack" data-i18n="nav_stack">تکنولوژی‌ها</a>
+    <a href="#contact" data-i18n="nav_contact">تماس</a>
     <a href="https://t.me/MosaybDev" target="_blank" rel="noopener" class="drawer-tg">
-      <i class="fa-brands fa-telegram"></i> عضویت در @MosaybDev
+      <i class="fa-brands fa-telegram"></i> @MosaybDev
     </a>
   </div>
 
-  <main id="top">
-    <!-- HERO SECTION -->
-    <section class="hero container">
-      <div class="hero-content reveal">
-        <div class="availability-pill">
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <div class="availability-pill hero-anim-item" style="--d: 0.05s">
           <span class="pulse-dot"></span>
-          <span>آماده همکاری در پروژه‌های وب و اتوماسیون تلگرام</span>
+          <span data-i18n="hero_badge">آماده همکاری در پروژه‌های وب و اتوماسیون تلگرام</span>
         </div>
 
-        <h1 class="hero-title">
-          تبدیل ایده‌ها به <span class="gradient-text">محصولات دیجیتال</span> سریع، مدرن و واقعی
+        <h1 class="hero-title hero-anim-item" style="--d: 0.15s">
+          <span class="hero-line-1" data-i18n="hero_title_prefix">تبدیل ایده‌ها به</span>
+          <span class="kinetic-phrase-wrap">
+            <span class="kinetic-phrase gradient-text" id="kineticPhrase" data-i18n="hero_title_kinetic">محصولات دیجیتال سریع، مدرن و واقعی</span>
+          </span>
         </h1>
 
-        <p class="hero-subtitle">
-          من <strong>مصیب شنبه‌زهی (MosaybDev)</strong> هستم؛ دانشجوی مهندسی کامپیوتر و توسعه‌دهنده فرانت‌اند و ربات‌های تلگرامی. وب‌سایت‌های فروشگاهی، داشبوردهای مدیریتی و ربات‌های هوشمند را با تمرکز بر تجربه کاربری روان و کدنویسی تمیز می‌سازم.
+        <p class="hero-subtitle hero-anim-item" style="--d: 0.28s" data-i18n="hero_subtitle">
+          من <strong>مصیب شنبه زهی</strong> هستم؛ دانشجوی مهندسی کامپیوتر و توسعه‌دهنده وب و ربات‌های تلگرامی. تمرکز من بر طراحی رابط‌های کاربری واکنش‌گرا، فروشگاه‌های آنلاین و سیستم‌های هوشمند اتوماسیون با پایتون است.
         </p>
 
-        <div class="hero-cta-group">
+        <div class="hero-cta-group hero-anim-item" style="--d: 0.4s">
           <a href="#projects" class="btn btn-primary">
-            <span>بررسی پروژه‌های واقعی</span>
-            <i class="fa-solid fa-arrow-left"></i>
+            <span data-i18n="hero_cta_projects">مشاهده نمونه‌کارها</span>
+            <i class="fa-solid fa-arrow-down"></i>
           </a>
           <a href="#contact" class="btn btn-secondary">
+            <span data-i18n="hero_cta_contact">شروع گفتگو و سفارش</span>
             <i class="fa-regular fa-paper-plane"></i>
-            <span>شروع همکاری</span>
           </a>
           <a href="resume.pdf" download class="btn btn-outline">
             <i class="fa-solid fa-file-arrow-down"></i>
-            <span>رزومه PDF</span>
+            <span data-i18n="hero_cta_resume">دانلود رزومه PDF</span>
           </a>
         </div>
 
-        <div class="hero-quick-links">
+        <div class="hero-quick-links hero-anim-item" style="--d: 0.52s">
           <a href="https://github.com/mosayb-dev" target="_blank" rel="noopener" class="social-pill">
             <i class="fa-brands fa-github"></i> GitHub
           </a>
@@ -133,161 +124,168 @@
             <i class="fa-brands fa-telegram"></i> @MosaybDev
           </a>
           <a href="mailto:mshanbhzhi@gmail.com" class="social-pill">
-            <i class="fa-regular fa-envelope"></i> ایمیل مستقیم
+            <i class="fa-regular fa-envelope"></i> Email
           </a>
         </div>
       </div>
 
-      <!-- Interactive Live Developer Console Card -->
-      <div class="hero-showcase reveal">
-        <div class="spatial-card">
-          <div class="card-header">
-            <div class="window-dots">
-              <span></span><span></span><span></span>
-            </div>
-            <span class="file-name">mosayb.config.js</span>
-            <span class="live-tag">ONLINE</span>
+      <!-- Spatial Terminal Card -->
+      <div class="spatial-card hero-anim-item" style="--d: 0.32s">
+        <div class="card-header">
+          <div class="window-dots">
+            <span></span><span></span><span></span>
           </div>
-
-          <div class="terminal-body" dir="ltr">
-            <div class="code-line"><span class="c-key">const</span> <span class="c-var">developer</span> = {</div>
-            <div class="code-line indent">name: <span class="c-str">"Mosayb Shanbezehi"</span>,</div>
-            <div class="code-line indent">role: <span class="c-str">"Web &amp; Telegram Bot Dev"</span>,</div>
-            <div class="code-line indent">education: <span class="c-str">"Computer Engineering"</span>,</div>
-            <div class="code-line indent">liveProjects: [</div>
-            <div class="code-line indent-2"><span class="c-str">"BlueMarket E-Commerce"</span>,</div>
-            <div class="code-line indent-2"><span class="c-str">"CafeNet Engineer System"</span></div>
-            <div class="code-line indent">],</div>
-            <div class="code-line indent">status: <span class="c-bool">"Ready for Impact"</span></div>
-            <div class="code-line">};</div>
+          <span class="file-name">mosayb_profile.py</span>
+          <span class="live-tag">ONLINE</span>
+        </div>
+        <div class="terminal-body" dir="ltr">
+          <div><span class="c-key">class</span> <span class="c-var">MosaybDev</span>:</div>
+          <div class="indent"><span class="c-var">name</span> = <span class="c-str">"Mosayb Shanbezehi"</span></div>
+          <div class="indent"><span class="c-var">role</span> = <span class="c-str">"Web &amp; Telegram Bot Developer"</span></div>
+          <div class="indent"><span class="c-var">stack</span> = [<span class="c-str">"HTML5"</span>, <span class="c-str">"CSS3"</span>, <span class="c-str">"JS"</span>, <span class="c-str">"Python"</span>, <span class="c-str">"FastAPI"</span>]</div>
+          <div class="indent"><span class="c-var">available_for_work</span> = <span class="c-bool">True</span></div>
+        </div>
+        <div class="card-metrics">
+          <div class="metric-item">
+            <strong>+2</strong>
+            <span data-i18n="metric_exp">سال تجربه عملی</span>
           </div>
-
-          <div class="card-metrics">
-            <div class="metric-item">
-              <strong>۲+</strong>
-              <span>پروژه زنده</span>
-            </div>
-            <div class="metric-item">
-              <strong>۱۵۰+</strong>
-              <span>محصول داینامیک</span>
-            </div>
-            <div class="metric-item">
-              <strong>۲۴/۷</strong>
-              <span>اتوماسیون ربات</span>
-            </div>
+          <div class="metric-item">
+            <strong>100%</strong>
+            <span data-i18n="metric_resp">طراحی واکنش‌گرا</span>
+          </div>
+          <div class="metric-item">
+            <strong>24/7</strong>
+            <span data-i18n="metric_auto">اتوماسیون هوشمند</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- BENTO GRID: ABOUT, VALUE PROPOSITION & EDUCATION -->
-    <section class="section container" id="bento-about">
-      <div class="section-header reveal">
-        <span class="section-kicker">01 // OVERVIEW</span>
-        <h2>چرا همکاری با <span class="gradient-text">MosaybDev</span>؟</h2>
-        <p>ترکیب نگاه مهندسی، طراحی رابط کاربری مدرن و تجربه ساخت سیستم‌های عملیاتی</p>
+    <!-- About & Value Proposition Section (No 01 // OVERVIEW) -->
+    <section class="section reveal" id="about">
+      <div class="section-header">
+        <h2 data-i18n="about_title">چرا همکاری با MosaybDev؟</h2>
+        <p data-i18n="about_subtitle">ترکیب نگاه مهندسی، کدنویسی تمیز و تمرکز بر نتیجه واقعی برای کسب‌وکار شما</p>
       </div>
 
       <div class="bento-grid">
-        <article class="bento-box bento-bio reveal">
-          <div class="bento-icon"><i class="fa-solid fa-terminal"></i></div>
-          <h3>نگاه محصول‌محور به کدنویسی</h3>
-          <p>
-            برای من برنامه‌نویسی فقط نوشتن چند خط کد نیست؛ هدف، ساخت ابزاری است که مشکل واقعی کاربر یا کسب‌وکار را حل کند. چه در طراحی یک فروشگاه اینترنتی پرسرعت با رابط کاربری واکنش‌گرا و چه در ساخت ربات تلگرامی متصل به پنل مدیریت برای خودکارسازی سفارش‌ها، تمام تمرکزم روی سادگی برای کاربر نهایی و پایداری سیستم است.
+        <article class="bento-box bento-bio">
+          <div class="bento-icon"><i class="fa-solid fa-code"></i></div>
+          <h3 data-i18n="bio_heading">درباره من و رویکرد توسعه</h3>
+          <p data-i18n="bio_text">
+            دانشجوی کارشناسی مهندسی کامپیوتر در دانشگاه سراوان هستم. در پروژه‌هایم به جای پیچیدگی‌های غیرضروری، روی سرعت بارگذاری، تجربه کاربری ساده و کدنویسی قابل نگهداری تمرکز می‌کنم؛ از طراحی فروشگاه‌های اینترنتی راست‌چین گرفته تا ساخت ربات‌های تلگرامی متصل به پنل مدیریت.
           </p>
           <div class="bio-highlights">
-            <span><i class="fa-solid fa-check-circle"></i> رابط کاربری راست‌چین و استاندارد</span>
-            <span><i class="fa-solid fa-check-circle"></i> معماری تمیز و قابل توسعه</span>
-            <span><i class="fa-solid fa-check-circle"></i> ارتباط شفاف تا تحویل نهایی</span>
+            <span><i class="fa-solid fa-check-circle"></i> <span data-i18n="hl_clean">کدنویسی تمیز و ماژولار</span></span>
+            <span><i class="fa-solid fa-check-circle"></i> <span data-i18n="hl_mobile">سازگاری کامل موبایل و دسکتاپ</span></span>
+            <span><i class="fa-solid fa-check-circle"></i> <span data-i18n="hl_support">پشتیبانی و توسعه مرحله‌به‌مرحله</span></span>
           </div>
         </article>
 
-        <article class="bento-box bento-telegram reveal">
+        <article class="bento-box bento-telegram">
           <div class="tg-glow"></div>
-          <div class="bento-icon tg-icon"><i class="fa-brands fa-telegram"></i></div>
-          <h3>جامعه و کانال تلگرام</h3>
-          <p>
-            در کانال رسمی <strong>@MosaybDev</strong> روند ساخت پروژه‌ها، نکات توسعه وب، دموهای ربات‌های تلگرامی و نمونه‌کارهای جدید را منتشر می‌کنم.
-          </p>
+          <div>
+            <div class="bento-icon tg-icon"><i class="fa-brands fa-telegram"></i></div>
+            <h3 data-i18n="tg_heading">کانال و ارتباط مستقیم</h3>
+            <p data-i18n="tg_text">
+              آخرین نمونه‌کارها، نکات برنامه‌نویسی وب و ربات‌های تلگرامی را در کانال رسمی دنبال کنید یا مستقیم پیام دهید.
+            </p>
+          </div>
           <a href="https://t.me/MosaybDev" target="_blank" rel="noopener" class="bento-link">
-            مشاهده کانال تلگرام <i class="fa-solid fa-arrow-up-left-from-circle"></i>
+            <span data-i18n="tg_cta">عضویت در @MosaybDev</span>
+            <i class="fa-solid fa-arrow-left"></i>
           </a>
         </article>
 
-        <article class="bento-box bento-edu reveal">
+        <article class="bento-box bento-edu">
           <div class="bento-icon"><i class="fa-solid fa-graduation-cap"></i></div>
-          <span class="badge-mint">در حال تحصیل (۱۴۰۱ – ۱۴۰۶)</span>
-          <h3>کارشناسی مهندسی کامپیوتر</h3>
-          <p>دانشگاه سراوان</p>
+          <span class="badge-mint" data-i18n="edu_badge">در حال تحصیل (۱۴۰۱ – ۱۴۰۶)</span>
+          <h3 data-i18n="edu_title">کارشناسی مهندسی کامپیوتر</h3>
+          <p data-i18n="edu_uni">دانشگاه سراوان — تمرکز بر توسعه نرم‌افزار، پایگاه داده و سیستم‌های تحت وب</p>
           <div class="lang-pills">
-            <span>فارسی (مسلط)</span>
-            <span>بلوچی (مادری)</span>
-            <span>انگلیسی (فنی / متوسط)</span>
+            <span data-i18n="lang_fa">فارسی (مسلط)</span>
+            <span data-i18n="lang_bal">بلوچی (مادری)</span>
+            <span data-i18n="lang_en">انگلیسی (فنی)</span>
           </div>
         </article>
 
-        <article class="bento-box bento-services reveal">
+        <article class="bento-box bento-services">
           <div class="service-mini">
-            <i class="fa-solid fa-store"></i>
+            <i class="fa-solid fa-laptop-code"></i>
             <div>
-              <h4>طراحی فروشگاه اینترنتی</h4>
-              <p>صفحات محصول، سبد خرید هوشمند، فیلتر زنده و سرعت بارگذاری بالا</p>
+              <h4 data-i18n="srv_web_title">طراحی و توسعه وب‌سایت و فروشگاه</h4>
+              <p data-i18n="srv_web_desc">پیاده‌سازی سایت‌های شرکتی، شخصی و فروشگاهی سریع با HTML5، CSS3، JavaScript و رابط کاربری مدرن.</p>
             </div>
           </div>
           <div class="service-mini">
             <i class="fa-solid fa-robot"></i>
             <div>
-              <h4>توسعه ربات تلگرام و پنل وب</h4>
-              <p>اتوماسیون ثبت سفارش، صدور فاکتور، احراز هویت و اتصال به دیتابیس</p>
-            </div>
-          </div>
-          <div class="service-mini">
-            <i class="fa-solid fa-wand-magic-sparkles"></i>
-            <div>
-              <h4>بازطراحی UI/UX مدرن</h4>
-              <p>تبدیل ایده‌های خام به رابط‌های کاربری چشم‌نواز و کاملاً واکنش‌گرا</p>
+              <h4 data-i18n="srv_bot_title">ساخت ربات‌های تلگرام و اتوماسیون</h4>
+              <p data-i18n="srv_bot_desc">توسعه ربات‌های فروشگاهی، ثبت سفارش، مدیریتی و اتصال به API و دیتابیس با Python.</p>
             </div>
           </div>
         </article>
       </div>
     </section>
 
-    <!-- FEATURED PROJECTS (CASE STUDIES) -->
-    <section class="section container" id="projects">
-      <div class="section-header reveal">
-        <span class="section-kicker">02 // CASE STUDIES</span>
-        <h2>پروژه‌های <span class="gradient-text">زنده و عملیاتی</span></h2>
-        <p>برای بررسی جزئیات معماری و چالش‌های فنی، روی هر پروژه کلیک کنید یا دمو را باز کنید</p>
+    <!-- Live Projects Section with Category Filter + In-Page Live Preview -->
+    <section class="section reveal" id="projects">
+      <div class="section-header">
+        <h2 data-i18n="projects_title">پروژه‌های زنده و نمونه‌کارها</h2>
+        <p data-i18n="projects_subtitle">پروژه‌ها را بر اساس حوزه دسته‌بندی کنید یا بدون ترک صفحه پیش‌نمایش زنده را ببینید</p>
       </div>
 
-      <div class="projects-stack">
-        <!-- Project 1: Blue Market -->
-        <article class="case-card" data-project="blue-market">
+      <!-- Category Tabs -->
+      <div class="project-filters" role="tablist" aria-label="دسته‌بندی پروژه‌ها">
+        <button type="button" class="filter-btn active" data-filter="all">
+          <i class="fa-solid fa-layer-group"></i>
+          <span data-i18n="filter_all">همه پروژه‌ها (۲)</span>
+        </button>
+        <button type="button" class="filter-btn" data-filter="web">
+          <i class="fa-solid fa-store"></i>
+          <span data-i18n="filter_web">وب و فروشگاه اینترنتی</span>
+        </button>
+        <button type="button" class="filter-btn" data-filter="bot">
+          <i class="fa-brands fa-telegram"></i>
+          <span data-i18n="filter_bot">ربات تلگرام و اتوماسیون</span>
+        </button>
+      </div>
+
+      <div class="projects-stack" id="projectsStack">
+        <!-- Project 01: Blue Market -->
+        <article class="case-card project-blue-market" data-project="blue-market" data-category="web">
           <div class="case-media">
-            <div class="media-grid">
-              <img src="blue-market-home.jpg" alt="صفحه اصلی فروشگاه اینترنتی بلو مارکت" loading="lazy" />
-              <img src="blue-market-product.jpg" alt="صفحه جزئیات محصول در بلو مارکت" loading="lazy" />
+            <span class="case-badge">E-COMMERCE • WEB</span>
+            <div class="media-grid browser-frames">
+              <figure class="shot-frame">
+                <div class="shot-bar"><span></span><span></span><span></span></div>
+                <img src="blue-market-home.jpg" alt="صفحه اصلی فروشگاه اینترنتی بلو مارکت" loading="lazy" />
+              </figure>
+              <figure class="shot-frame">
+                <div class="shot-bar"><span></span><span></span><span></span></div>
+                <img src="blue-market-product.jpg" alt="صفحه جزئیات محصول بلو مارکت" loading="lazy" />
+              </figure>
             </div>
-            <span class="case-badge">PROJECT 01 · E-COMMERCE</span>
           </div>
 
           <div class="case-body">
             <div class="case-meta">
-              <span class="case-category">فروشگاه اینترنتی موبایل و کالای دیجیتال</span>
-              <span class="case-status live">● نسخه آنلاین فعال</span>
+              <span class="case-category" data-i18n="p1_cat">فروشگاه اینترنتی موبایل و کالای دیجیتال</span>
+              <span class="case-status live" data-i18n="p1_status">● نسخه آنلاین فعال</span>
             </div>
 
-            <h3>بلو مارکت (Blue Market)</h3>
-            <p class="case-desc">
+            <h3 data-i18n="p1_title">بلو مارکت (Blue Market)</h3>
+            <p class="case-desc" data-i18n="p1_desc">
               یک پلتفرم فروشگاهی مدرن و کاملاً راست‌چین با بیش از ۱۵۰ محصول داینامیک. این پروژه با تمرکز بر تجربه خرید سریع، دسته‌بندی هوشمند، جستجوی لحظه‌ای و صفحه جزئیات محصول حرفه‌ای پیاده‌سازی شده است.
             </p>
 
             <div class="case-highlights">
-              <h4><i class="fa-solid fa-microchip"></i> چالش‌های فنی و راه‌حل‌ها:</h4>
+              <h4><i class="fa-solid fa-wand-magic-sparkles"></i> <span data-i18n="p_highlights">چالش‌های فنی و راه‌حل‌ها:</span></h4>
               <ul>
-                <li><strong>جستجو و فیلتر آنی سمت کلاینت:</strong> پیاده‌سازی موتور فیلتر چندگانه و سرچ زنده با Vanilla JavaScript بدون نیاز به رفرش صفحه.</li>
-                <li><strong>مدیریت وضعیت سبد خرید:</strong> ذخیره‌سازی پایدار اقلام سبد خرید و تنظیمات کاربر در LocalStorage.</li>
-                <li><strong>طراحی Mobile-First:</strong> بهینه‌سازی چیدمان کارت‌های محصول و منوها برای نمایش بی‌نقص در موبایل و دسکتاپ.</li>
+                <li data-i18n="p1_h1"><strong>جستجو و فیلتر آنی سمت کلاینت:</strong> پیاده‌سازی موتور فیلتر چندگانه و سرچ زنده با Vanilla JavaScript بدون نیاز به رفرش صفحه.</li>
+                <li data-i18n="p1_h2"><strong>مدیریت وضعیت سبد خرید:</strong> ذخیره‌سازی پایدار اقلام سبد خرید و تنظیمات کاربر در LocalStorage.</li>
+                <li data-i18n="p1_h3"><strong>طراحی Mobile-First:</strong> بهینه‌سازی چیدمان کارت‌های محصول و منوها برای نمایش بی‌نقص در موبایل و دسکتاپ.</li>
               </ul>
             </div>
 
@@ -301,46 +299,53 @@
             </div>
 
             <div class="case-actions">
-              <a href="https://mosayb-dev.github.io/BlueMarket.ir/" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
-                مشاهده سایت زنده <i class="fa-solid fa-arrow-up-left-from-circle"></i>
-              </a>
+              <button type="button" class="btn btn-primary btn-sm live-preview-btn" data-project="blue-market">
+                <i class="fa-solid fa-display"></i>
+                <span data-i18n="btn_live_inside">پیش‌نمایش زنده در سایت</span>
+              </button>
               <a href="https://github.com/mosayb-dev/BlueMarket.ir" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
-                <i class="fa-brands fa-github"></i> سورس کد
+                <i class="fa-brands fa-github"></i>
+                <span data-i18n="btn_source">سورس کد</span>
               </a>
               <button type="button" class="btn btn-ghost btn-sm open-modal-btn" data-project="blue-market">
-                <i class="fa-solid fa-expand"></i> جزئیات بیشتر
+                <i class="fa-solid fa-expand"></i>
+                <span data-i18n="btn_details">جزئیات بیشتر</span>
               </button>
             </div>
           </div>
         </article>
 
-        <!-- Project 2: CafeNet Engineer -->
-        <article class="case-card reverse" data-project="cafenet-engineer">
+        <!-- Project 02: CafeNet Engineer -->
+        <article class="case-card reverse" data-project="cafenet-engineer" data-category="bot">
           <div class="case-media">
-            <div class="media-grid">
-              <img src="cafenet-bot-menu.png" alt="منوی اصلی ربات تلگرامی کافی‌نت مهندس" loading="lazy" />
-              <img src="cafenet-bot-services.png" alt="لیست خدمات و تعرفه‌های ربات کافی‌نت مهندس" loading="lazy" />
+            <span class="case-badge">TELEGRAM BOT • PYTHON</span>
+            <div class="media-grid phone-frames">
+              <figure class="shot-frame phone">
+                <img src="cafenet-bot-menu.png" alt="منوی اصلی ربات تلگرام کافی‌نت مهندس" loading="lazy" />
+              </figure>
+              <figure class="shot-frame phone">
+                <img src="cafenet-bot-services.png" alt="بخش خدمات و پیگیری سفارش ربات کافی‌نت مهندس" loading="lazy" />
+              </figure>
             </div>
-            <span class="case-badge">PROJECT 02 · BOT &amp; WEB SYSTEM</span>
           </div>
 
           <div class="case-body">
             <div class="case-meta">
-              <span class="case-category">سامانه یکپارچه اتوماسیون خدمات کافی‌نت</span>
-              <span class="case-status live">● ربات تلگرام فعال</span>
+              <span class="case-category" data-i18n="p2_cat">سامانه اتوماسیون خدمات آنلاین و ربات تلگرام</span>
+              <span class="case-status live" data-i18n="p2_status">● عملیاتی در تلگرام</span>
             </div>
 
-            <h3>کافی‌نت مهندس (CafeNet Engineer)</h3>
-            <p class="case-desc">
-              سیستم جامع پذیرش و مدیریت سفارش‌های آنلاین شامل ربات تلگرامی مشتریان و داشبورد مدیریت تحت وب. مشتریان بدون نیاز به مراجعه حضوری می‌توانند خدمات مورد نظر را انتخاب، مدارک را ارسال و وضعیت سفارش را پیگیری کنند.
+            <h3 data-i18n="p2_title">کافی‌نت مهندس (CafeNet Engineer)</h3>
+            <p class="case-desc" data-i18n="p2_desc">
+              سیستم یکپارچه پذیرش غیرحضوری سفارش‌های کافی‌نت از طریق ربات تلگرام و پنل مدیریت وب. کاربران بدون مراجعه حضوری خدمات خود را انتخاب، مدارک را ارسال و کد پیگیری دریافت می‌کنند.
             </p>
 
             <div class="case-highlights">
-              <h4><i class="fa-solid fa-microchip"></i> چالش‌های فنی و راه‌حل‌ها:</h4>
+              <h4><i class="fa-solid fa-wand-magic-sparkles"></i> <span data-i18n="p_highlights">چالش‌های فنی و راه‌حل‌ها:</span></h4>
               <ul>
-                <li><strong>معماری دوگانه ربات و پنل وب:</strong> اتصال ربات تلگرام پایتونی به دیتابیس SQLite و API سمت سرور (FastAPI) برای همگام‌سازی لحظه‌ای سفارش‌ها.</li>
-                <li><strong>مدیریت جریان مکالمه (State Machine):</strong> طراحی منوهای مرحله‌به‌مرحله برای ثبت سفارش، ارسال رسید پرداخت و رزرو نوبت حضوری.</li>
-                <li><strong>سیستم تیکتینگ و پیگیری:</strong> امکان ارسال پیام پشتیبانی و مشاهده وضعیت هر سفارش با کد رهگیری اختصاصی.</li>
+                <li data-i18n="p2_h1"><strong>مدیریت وضعیت گفت‌وگو (State Machine):</strong> هدایت مرحله‌به‌مرحله کاربر برای ثبت اطلاعات، آپلود مدارک و تایید نهایی.</li>
+                <li data-i18n="p2_h2"><strong>یکپارچه‌سازی ربات و پنل وب:</strong> اتصال ربات تلگرام به API مرکزی و دیتابیس برای مشاهده و تغییر وضعیت سفارش‌ها توسط مدیر.</li>
+                <li data-i18n="p2_h3"><strong>کاهش زمان پاسخ‌گویی:</strong> خودکارسازی استعلام تعرفه‌ها، نوبت‌دهی و ارسال رسید به مشتری.</li>
               </ul>
             </div>
 
@@ -350,15 +355,21 @@
               <span>FastAPI</span>
               <span>SQLite</span>
               <span>Admin Dashboard</span>
-              <span>HTML/CSS/JS</span>
+              <span>Automation</span>
             </div>
 
             <div class="case-actions">
-              <a href="https://t.me/CafeNetMohandesBot" target="_blank" rel="noopener" class="btn btn-primary btn-sm">
-                اجرای ربات در تلگرام <i class="fa-brands fa-telegram"></i>
+              <button type="button" class="btn btn-primary btn-sm live-preview-btn" data-project="cafenet-engineer">
+                <i class="fa-solid fa-mobile-screen"></i>
+                <span data-i18n="btn_bot_sim">تست تعاملی ربات در سایت</span>
+              </button>
+              <a href="https://t.me/CafeNetMohandesBot" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">
+                <i class="fa-brands fa-telegram"></i>
+                <span data-i18n="btn_open_tg">باز کردن در تلگرام</span>
               </a>
               <button type="button" class="btn btn-ghost btn-sm open-modal-btn" data-project="cafenet-engineer">
-                <i class="fa-solid fa-expand"></i> معماری پروژه
+                <i class="fa-solid fa-expand"></i>
+                <span data-i18n="btn_details">جزئیات بیشتر</span>
               </button>
             </div>
           </div>
@@ -366,217 +377,270 @@
       </div>
     </section>
 
-    <!-- WORKFLOW SECTION -->
-    <section class="section container" id="workflow">
-      <div class="section-header reveal">
-        <span class="section-kicker">03 // PROCESS</span>
-        <h2>مسیر اجرای <span class="gradient-text">پروژه شما</span></h2>
-        <p>فرآیند شفاف از اولین گفتگو تا تحویل نسخه نهایی و پشتیبانی</p>
+    <!-- Animated Workflow Section (4 Cards) -->
+    <section class="section reveal" id="workflow">
+      <div class="section-header">
+        <h2 data-i18n="wf_title">مسیر اجرای پروژه</h2>
+        <p data-i18n="wf_subtitle">شفافیت از اولین پیام تا تحویل نهایی و پشتیبانی</p>
       </div>
 
       <div class="workflow-grid">
-        <div class="step-card reveal">
-          <span class="step-num">۰۱</span>
-          <h3>نیازسنجی و معماری</h3>
-          <p>بررسی دقیق هدف پروژه، امکانات مورد نیاز، ساختار صفحات یا جریان کار ربات قبل از شروع کدنویسی.</p>
+        <div class="step-card anim-card" style="--card-i: 0">
+          <div class="step-top">
+            <span class="step-num">۰۱</span>
+            <i class="fa-solid fa-compass-drafting step-icon"></i>
+          </div>
+          <h3 data-i18n="wf1_t">تحلیل نیاز و معماری</h3>
+          <p data-i18n="wf1_d">بررسی دقیق هدف پروژه، امکانات مورد نیاز، جریان کاربری و انتخاب بهترین ساختار فنی.</p>
+          <span class="step-bar"></span>
         </div>
-        <div class="step-card reveal">
-          <span class="step-num">۰۲</span>
-          <h3>طراحی رابط کاربری</h3>
-          <p>ساخت ظاهر مدرن، واکنش‌گرا و کاربرپسند متناسب با هویت برند شما با تمرکز بر تجربه کاربری روان.</p>
+
+        <div class="step-card anim-card" style="--card-i: 1">
+          <div class="step-top">
+            <span class="step-num">۰۲</span>
+            <i class="fa-solid fa-palette step-icon"></i>
+          </div>
+          <h3 data-i18n="wf2_t">طراحی رابط کاربری</h3>
+          <p data-i18n="wf2_d">طراحی چیدمان مدرن، واکنش‌گرا و استاندارد برای تجربه‌ای روان در موبایل و دسکتاپ.</p>
+          <span class="step-bar"></span>
         </div>
-        <div class="step-card reveal">
-          <span class="step-num">۰۳</span>
-          <h3>توسعه و کدنویسی تمیز</h3>
-          <p>پیاده‌سازی بخش‌های تعاملی، منطق برنامه، اتصال به دیتابیس یا API با رعایت استانداردهای سرعت و امنیت.</p>
+
+        <div class="step-card anim-card" style="--card-i: 2">
+          <div class="step-top">
+            <span class="step-num">۰۳</span>
+            <i class="fa-solid fa-terminal step-icon"></i>
+          </div>
+          <h3 data-i18n="wf3_t">توسعه و کدنویسی تمیز</h3>
+          <p data-i18n="wf3_d">پیاده‌سازی فرانت‌اند یا ربات تلگرام با کدنویسی ماژولار، سرعت بالا و رعایت نکات امنیتی.</p>
+          <span class="step-bar"></span>
         </div>
-        <div class="step-card reveal">
-          <span class="step-num">۰۴</span>
-          <h3>تست، دیپلوی و تحویل</h3>
-          <p>بررسی کامل در موبایل و دسکتاپ، راه‌اندازی روی هاست یا سرور و ارائه آموزش کامل مدیریت سیستم.</p>
+
+        <div class="step-card anim-card" style="--card-i: 3">
+          <div class="step-top">
+            <span class="step-num">۰۴</span>
+            <i class="fa-solid fa-rocket step-icon"></i>
+          </div>
+          <h3 data-i18n="wf4_t">تست، استقرار و پشتیبانی</h3>
+          <p data-i18n="wf4_d">بررسی نهایی در دستگاه‌های مختلف، راه‌اندازی آنلاین و همراهی برای توسعه قابلیت‌های بعدی.</p>
+          <span class="step-bar"></span>
         </div>
       </div>
     </section>
 
-    <!-- TECH STACK -->
-    <section class="section container" id="stack">
-      <div class="section-header reveal">
-        <span class="section-kicker">04 // TECH STACK</span>
-        <h2>ابزارها و <span class="gradient-text">تکنولوژی‌ها</span></h2>
-        <p>فناوری‌هایی که در ساخت پروژه‌های واقعی از آن‌ها استفاده می‌کنم</p>
+    <!-- Animated Tools & Technologies Section -->
+    <section class="section reveal" id="stack">
+      <div class="section-header">
+        <h2 data-i18n="stack_title">ابزارها و تکنولوژی‌ها</h2>
+        <p data-i18n="stack_subtitle">مهارت‌هایی که در پروژه‌های واقعی به کار می‌برم</p>
       </div>
 
       <div class="stack-grid">
-        <div class="stack-card reveal">
+        <div class="stack-card anim-card" style="--card-i: 0">
           <div class="stack-head">
-            <i class="fa-solid fa-laptop-code"></i>
-            <h3>توسعه فرانت‌اند (Frontend)</h3>
+            <i class="fa-solid fa-display"></i>
+            <h3 data-i18n="st1_t">توسعه فرانت‌اند و وب</h3>
           </div>
           <div class="stack-list">
-            <span class="skill-chip strong">HTML5 Semantic</span>
-            <span class="skill-chip strong">CSS3 / Flexbox / Grid</span>
-            <span class="skill-chip strong">JavaScript (ES6+)</span>
-            <span class="skill-chip">Bootstrap 5</span>
-            <span class="skill-chip">React (در حال توسعه)</span>
-            <span class="skill-chip strong">Responsive &amp; RTL Design</span>
+            <span class="skill-chip strong"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="skill-chip strong"><i class="fa-brands fa-css3-alt"></i> CSS3 / Grid / Flex</span>
+            <span class="skill-chip strong"><i class="fa-brands fa-js"></i> JavaScript (ES6+)</span>
+            <span class="skill-chip"><i class="fa-brands fa-bootstrap"></i> Bootstrap 5</span>
+            <span class="skill-chip"><i class="fa-solid fa-mobile-screen"></i> Responsive &amp; RTL</span>
+            <span class="skill-chip"><i class="fa-solid fa-magnifying-glass-chart"></i> Technical SEO</span>
           </div>
         </div>
 
-        <div class="stack-card reveal">
+        <div class="stack-card anim-card" style="--card-i: 1">
           <div class="stack-head">
             <i class="fa-solid fa-server"></i>
-            <h3>بک‌اند و ربات‌سازی (Backend &amp; Bots)</h3>
+            <h3 data-i18n="st2_t">بک‌اند، ربات و دیتابیس</h3>
           </div>
           <div class="stack-list">
-            <span class="skill-chip strong">Python</span>
-            <span class="skill-chip strong">Telegram Bot (aiogram / API)</span>
-            <span class="skill-chip">FastAPI</span>
-            <span class="skill-chip">SQLite</span>
-            <span class="skill-chip">Node.js (مبانی)</span>
-            <span class="skill-chip">REST APIs</span>
+            <span class="skill-chip strong"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="skill-chip strong"><i class="fa-brands fa-telegram"></i> Aiogram / Bot API</span>
+            <span class="skill-chip strong"><i class="fa-solid fa-bolt"></i> FastAPI</span>
+            <span class="skill-chip"><i class="fa-solid fa-database"></i> SQLite &amp; SQLAlchemy</span>
+            <span class="skill-chip"><i class="fa-solid fa-plug"></i> REST API Integration</span>
           </div>
         </div>
 
-        <div class="stack-card reveal">
+        <div class="stack-card anim-card" style="--card-i: 2">
           <div class="stack-head">
-            <i class="fa-solid fa-toolbox"></i>
-            <h3>ابزارها و زیرساخت</h3>
+            <i class="fa-solid fa-wrench"></i>
+            <h3 data-i18n="st3_t">ابزارها و استقرار</h3>
           </div>
           <div class="stack-list">
-            <span class="skill-chip strong">Git &amp; GitHub</span>
-            <span class="skill-chip">GitHub Pages / Netlify</span>
-            <span class="skill-chip">UI/UX Prototyping</span>
-            <span class="skill-chip">Technical SEO</span>
-            <span class="skill-chip">Performance Optimization</span>
+            <span class="skill-chip strong"><i class="fa-brands fa-git-alt"></i> Git &amp; GitHub</span>
+            <span class="skill-chip"><i class="fa-solid fa-code"></i> VS Code</span>
+            <span class="skill-chip"><i class="fa-solid fa-cloud-arrow-up"></i> GitHub Pages / Netlify</span>
+            <span class="skill-chip"><i class="fa-solid fa-pen-ruler"></i> UI/UX Prototyping</span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- CONTACT SECTION -->
-    <section class="section container" id="contact">
-      <div class="contact-wrapper reveal">
+    <!-- Contact Section -->
+    <section class="section reveal" id="contact">
+      <div class="contact-wrapper">
         <div class="contact-info-side">
-          <span class="section-kicker">05 // LET'S TALK</span>
-          <h2>آماده شروع یک <span class="gradient-text">پروژه جدید</span> هستید؟</h2>
-          <p>
-            برای سفارش طراحی سایت، ساخت ربات تلگرامی یا همکاری در تیم‌های توسعه نرم‌افزار، از طریق راه‌های زیر مستقیماً با من در ارتباط باشید.
-          </p>
+          <h2 data-i18n="ct_title">بیایید پروژه بعدی را بسازیم</h2>
+          <p data-i18n="ct_subtitle">برای سفارش طراحی وب‌سایت، ساخت ربات تلگرام یا همکاری تیمی از سریع‌ترین مسیر زیر پیام دهید.</p>
 
           <div class="direct-channels">
             <a href="https://t.me/MosaybDev" target="_blank" rel="noopener" class="channel-item">
               <div class="ch-icon"><i class="fa-brands fa-telegram"></i></div>
               <div>
-                <small>تلگرام (پاسخ‌گویی سریع)</small>
-                <strong dir="ltr">@MosaybDev</strong>
+                <small data-i18n="ct_tg_label">تلگرام مستقیم (پاسخ سریع)</small>
+                <strong>@MosaybDev</strong>
               </div>
             </a>
 
-            <a href="mailto:mshanbhzhi@gmail.com" class="channel-item">
-              <div class="ch-icon"><i class="fa-regular fa-envelope"></i></div>
-              <div>
-                <small>ایمیل کاری</small>
-                <strong dir="ltr">mshanbhzhi@gmail.com</strong>
-              </div>
-            </a>
+            <div class="channel-item">
+              <a href="mailto:mshanbhzhi@gmail.com" class="ch-main-link">
+                <div class="ch-icon"><i class="fa-regular fa-envelope"></i></div>
+                <div>
+                  <small data-i18n="ct_em_label">ایمیل رسمی</small>
+                  <strong>mshanbhzhi@gmail.com</strong>
+                </div>
+              </a>
+              <button type="button" class="copy-btn" data-copy="mshanbhzhi@gmail.com" title="کپی ایمیل">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
 
-            <a href="tel:+989229480252" class="channel-item">
-              <div class="ch-icon"><i class="fa-solid fa-phone"></i></div>
-              <div>
-                <small>تماس تلفنی / واتساپ</small>
-                <strong dir="ltr">+98 922 948 0252</strong>
-              </div>
-            </a>
+            <div class="channel-item">
+              <a href="tel:+989229480252" class="ch-main-link">
+                <div class="ch-icon"><i class="fa-solid fa-phone"></i></div>
+                <div>
+                  <small data-i18n="ct_ph_label">تماس تلفنی / واتساپ</small>
+                  <strong dir="ltr">+98 922 948 0252</strong>
+                </div>
+              </a>
+              <button type="button" class="copy-btn" data-copy="+989229480252" title="کپی شماره">
+                <i class="fa-regular fa-copy"></i>
+              </button>
+            </div>
 
             <div class="channel-item static">
               <div class="ch-icon"><i class="fa-solid fa-location-dot"></i></div>
               <div>
-                <small>موقعیت مکانی</small>
-                <strong>گلشن، ایران (امکان همکاری ریموت)</strong>
+                <small data-i18n="ct_loc_label">موقعیت</small>
+                <strong data-i18n="ct_loc_val">ایران — همکاری حضوری و دورکاری</strong>
               </div>
             </div>
           </div>
         </div>
 
         <form class="contact-form-side" id="contactForm" novalidate>
-          <h3>ارسال مستقیم پیام</h3>
+          <h3 data-i18n="form_heading">ارسال پیام مستقیم</h3>
+
           <div class="form-grid-2">
             <div class="field-box">
-              <label for="name">نام و نام خانوادگی</label>
+              <label for="name" data-i18n="form_name_lbl">نام و نام خانوادگی</label>
               <input type="text" id="name" name="name" placeholder="مثلاً: علی رضایی" required />
-              <small class="err-msg" data-for="name"></small>
+              <span class="err-msg" data-for="name"></span>
             </div>
+
             <div class="field-box">
-              <label for="email">ایمیل یا آیدی تلگرام</label>
-              <input type="text" id="email" name="email" placeholder="example@mail.com یا @username" required />
-              <small class="err-msg" data-for="email"></small>
+              <label for="email" data-i18n="form_contact_lbl">ایمیل یا آیدی تلگرام</label>
+              <input type="text" id="email" name="email" placeholder="name@email.com / @username" required />
+              <span class="err-msg" data-for="email"></span>
             </div>
           </div>
 
           <div class="field-box">
-            <label for="subject">نوع پروژه / موضوع</label>
+            <label for="subject" data-i18n="form_sub_lbl">موضوع همکاری</label>
             <select id="subject" name="subject">
-              <option value="طراحی وب‌سایت فروشگاهی / شرکتی">طراحی وب‌سایت فروشگاهی / شرکتی</option>
-              <option value="ساخت ربات تلگرامی اختصاصی">ساخت ربات تلگرامی اختصاصی</option>
-              <option value="پیشنهاد همکاری / استخدام">پیشنهاد همکاری / استخدام</option>
-              <option value="سایر موارد">سایر موارد</option>
+              <option value="سفارش طراحی وب‌سایت یا فروشگاه" data-i18n="opt_web">سفارش طراحی وب‌سایت یا فروشگاه</option>
+              <option value="سفارش ساخت ربات تلگرام" data-i18n="opt_bot">سفارش ساخت ربات تلگرام</option>
+              <option value="همکاری پروژه‌ای یا استخدام" data-i18n="opt_hire">همکاری پروژه‌ای یا استخدام</option>
+              <option value="مشاوره و سایر موارد" data-i18n="opt_other">مشاوره و سایر موارد</option>
             </select>
           </div>
 
           <div class="field-box">
-            <label for="message">توضیحات پیام</label>
-            <textarea id="message" name="message" rows="4" placeholder="خلاصه‌ای از نیاز یا پروژه خود بنویسید..." required></textarea>
-            <small class="err-msg" data-for="message"></small>
+            <label for="message" data-i18n="form_msg_lbl">توضیحات پیام</label>
+            <textarea id="message" name="message" rows="4" placeholder="خلاصه‌ای از ایده یا نیاز پروژه خود بنویسید..." required></textarea>
+            <span class="err-msg" data-for="message"></span>
           </div>
 
           <div class="form-submit-row">
-            <button type="submit" class="btn btn-primary full-w">
-              <i class="fa-regular fa-paper-plane"></i> ارسال از طریق ایمیل
+            <button type="button" class="btn btn-primary full-w" id="sendTelegramBtn">
+              <i class="fa-brands fa-telegram"></i>
+              <span data-i18n="btn_send_tg">ارسال مستقیم در تلگرام</span>
             </button>
-            <button type="button" id="sendTelegramBtn" class="btn btn-secondary full-w">
-              <i class="fa-brands fa-telegram"></i> ارسال فوری در تلگرام
+            <button type="submit" class="btn btn-outline full-w">
+              <i class="fa-regular fa-envelope"></i>
+              <span data-i18n="btn_send_em">ارسال با ایمیل</span>
             </button>
           </div>
-          <p class="form-feedback" id="formStatus"></p>
+
+          <p class="form-feedback" id="formStatus" role="status"></p>
         </form>
       </div>
     </section>
   </main>
 
-  <footer class="footer container">
-    <div class="footer-inner">
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-inner">
       <div class="footer-brand">
         <span class="brand-badge">M</span>
         <div>
           <strong>MOSAYB.DEV</strong>
-          <small>توسعه وب و اتوماسیون هوشمند</small>
+          <small data-i18n="footer_tag">طراحی و توسعه وب و ربات‌های هوشمند تلگرام</small>
         </div>
       </div>
 
       <div class="footer-links">
-        <a href="https://github.com/mosayb-dev" target="_blank" rel="noopener" aria-label="گیت‌هاب"><i class="fa-brands fa-github"></i></a>
-        <a href="https://t.me/MosaybDev" target="_blank" rel="noopener" aria-label="تلگرام"><i class="fa-brands fa-telegram"></i></a>
-        <a href="mailto:mshanbhzhi@gmail.com" aria-label="ایمیل"><i class="fa-regular fa-envelope"></i></a>
+        <a href="https://github.com/mosayb-dev" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://t.me/MosaybDev" target="_blank" rel="noopener" aria-label="Telegram"><i class="fa-brands fa-telegram"></i></a>
+        <a href="mailto:mshanbhzhi@gmail.com" aria-label="Email"><i class="fa-regular fa-envelope"></i></a>
       </div>
     </div>
-    <div class="footer-copy">
-      <span>© <span id="year">2026</span> مصیب شنبه‌زهی — تمامی حقوق محفوظ است.</span>
-      <span>ساخته‌شده با دقت، کد تمیز و اشتیاق</span>
+
+    <div class="container footer-copy">
+      <span>© <span id="year">2026</span> <span data-i18n="footer_name">مصیب شنبه زهی (MosaybDev)</span></span>
+      <span data-i18n="footer_built">ساخته‌شده با کدنویسی تمیز و دقت در جزئیات</span>
     </div>
   </footer>
 
-  <button class="back-to-top" id="backToTop" aria-label="بازگشت به بالا">
+  <!-- Back To Top -->
+  <button type="button" class="back-to-top" id="backToTop" aria-label="بازگشت به بالا">
     <i class="fa-solid fa-arrow-up"></i>
   </button>
 
-  <!-- Unified Project Modal -->
-  <div class="project-modal" id="projectModal" aria-hidden="true">
+  <!-- Project Details Modal -->
+  <div class="project-modal" id="projectModal" aria-hidden="true" role="dialog" aria-labelledby="modalTitle">
     <div class="modal-backdrop" data-close></div>
-    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
-      <button class="modal-close" data-close aria-label="بستن پنجره">
+    <div class="modal-dialog">
+      <button type="button" class="modal-close" data-close aria-label="بستن">
         <i class="fa-solid fa-xmark"></i>
       </button>
-      <div class="modal-body" id="modalBody"></div>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- In-Page Live Preview Browser Modal (Zero Page Leave) -->
+  <div class="project-modal live-preview-modal" id="livePreviewModal" aria-hidden="true" role="dialog">
+    <div class="modal-backdrop" data-close-preview></div>
+    <div class="preview-browser-dialog">
+      <div class="preview-browser-bar">
+        <div class="window-dots">
+          <span></span><span></span><span></span>
+        </div>
+        <div class="preview-url-box" id="previewUrlText" dir="ltr">https://mosayb-dev.github.io/BlueMarket.ir/</div>
+        <div class="preview-bar-actions">
+          <a href="#" target="_blank" rel="noopener" id="previewExternalLink" class="btn btn-secondary btn-sm">
+            <i class="fa-solid fa-up-right-from-square"></i>
+            <span data-i18n="btn_new_tab">تب جدید</span>
+          </a>
+          <button type="button" class="icon-btn" data-close-preview aria-label="بستن پیش‌نمایش">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+      </div>
+      <div class="preview-stage" id="previewStage"></div>
     </div>
   </div>
 
